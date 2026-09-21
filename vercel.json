@@ -4,7 +4,7 @@
   "framework": "vite",
   "functions": {
     "api/[...route].mjs": {
-      "includeFiles": ["public/data/**"]
+      "includeFiles": "public/data/**"
     }
   },
   "rewrites": [
