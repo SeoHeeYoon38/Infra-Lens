@@ -2250,6 +2250,18 @@ body::-webkit-scrollbar {
 
 .dashboard-home .dashboard-intro {
   padding-bottom: 25px;
+  padding-top: 18px;
+}
+
+.dashboard-home .dashboard-intro::before {
+  content: '01 · 전국 지도';
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: $teal;
+  font: 600 10px $mono;
+  letter-spacing: .09em;
+  text-transform: uppercase;
 }
 
 .dashboard-home .dashboard-intro h1,
@@ -2270,8 +2282,13 @@ body::-webkit-scrollbar {
 }
 
 .dashboard-home .map-filter-bar {
+  min-height: 104px;
+  margin-bottom: 28px;
+  padding: 20px 0;
+  border-top: 2px solid $text;
   border-right: 0;
   border-left: 0;
+  border-bottom: 1px solid $line-strong;
   border-radius: 0;
   box-shadow: none;
   background: transparent;
@@ -2283,7 +2300,7 @@ body::-webkit-scrollbar {
 }
 
 .dashboard-home .filter-heading::before {
-  content: '01';
+  content: '02';
   align-self: flex-start;
   margin-top: 4px;
   color: $coral;
@@ -2292,7 +2309,19 @@ body::-webkit-scrollbar {
 }
 
 .dashboard-home .filter-symbol {
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
+}
+
+.dashboard-home .filter-heading strong {
+  font-size: 17px;
+  letter-spacing: -.045em;
+}
+
+.dashboard-home .filter-heading small {
+  margin-top: 6px;
+  font-size: 12px;
 }
 
 .dashboard-home .detail-link,
@@ -2310,6 +2339,111 @@ body::-webkit-scrollbar {
   border-radius: 0;
   box-shadow: none;
   background: transparent;
+}
+
+.dashboard-home .dashboard-selection::before {
+  content: '03 · ACTIVE REGION';
+  display: block;
+  margin-bottom: 18px;
+  color: $teal;
+  font: 600 10px $mono;
+  letter-spacing: .09em;
+}
+
+.dashboard-home .dashboard-selection .selection-header .eyebrow {
+  display: none;
+}
+
+.dashboard-home .dashboard-selection .selection-header h2 {
+  margin-top: 0;
+  font-size: 17px;
+}
+
+.dashboard-home .select-trigger {
+  min-height: 52px;
+  border-color: $text;
+  border-radius: 0;
+  background: $panel;
+}
+
+.dashboard-home .detail-link {
+  min-height: 52px;
+  padding-right: 22px;
+  padding-left: 22px;
+}
+
+// Warm mascot-led accent palette for non-map UI.
+.app-header .main-nav a.active::after {
+  background: #d49a2c;
+  box-shadow: 0 0 12px rgba(212, 154, 44, .42);
+}
+
+.dashboard-home .dashboard-intro h1 em,
+.page-main .page-hero h1 em,
+.analysis-main .analysis-heading h1 em {
+  color: #bd8420;
+  text-shadow: none;
+}
+
+.dashboard-home .intro-aside {
+  border-left-color: #d49a2c;
+  background: linear-gradient(90deg, rgba(212, 154, 44, .1), transparent 72%);
+}
+
+.dashboard-home .dashboard-intro::before,
+.dashboard-home .filter-heading::before,
+.dashboard-home .dashboard-selection::before {
+  color: #bd8420;
+}
+
+.dashboard-home .filter-symbol {
+  color: #bd8420;
+  border-color: rgba(212, 154, 44, .35);
+  background: #fff7df;
+}
+
+.dashboard-home .detail-link,
+.dashboard-home .primary-action,
+.analysis-main .primary-action,
+.guide-next {
+  border-color: #b97b18;
+  background: #b97b18;
+  box-shadow: 0 5px 14px rgba(185, 123, 24, .18);
+}
+
+.dashboard-home .detail-link:hover,
+.dashboard-home .primary-action:hover,
+.analysis-main .primary-action:hover,
+.guide-next:hover {
+  background: #9f6712;
+}
+
+.guide-link:hover {
+  color: #a96a00;
+  border-color: rgba(212, 154, 44, .58);
+}
+
+.dashboard-home .dashboard-intro h1::after,
+.page-main .page-hero h1::after,
+.analysis-main .analysis-heading h1::after {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 0 7px 8px;
+  border-radius: 50%;
+  background: #c84f45;
+  box-shadow: 0 0 0 5px rgba(200, 79, 69, .1);
+}
+
+@media (max-width: 760px) {
+  .dashboard-home .dashboard-intro h1::after,
+  .page-main .page-hero h1::after,
+  .analysis-main .analysis-heading h1::after {
+    width: 7px;
+    height: 7px;
+    margin-left: 5px;
+  }
 }
 
 .dashboard-home .selection-header strong,
