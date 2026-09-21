@@ -1,0 +1,128 @@
+{
+  "source": "https://www.data.go.kr/data/15107625/fileData.do",
+  "dataset": "서울특별시 강서구 행정동별 1인가구 현황",
+  "asOf": "2026-07-31",
+  "scope": "서울특별시 강서구·행정동",
+  "rows": [
+    {
+      "year": 2026,
+      "dong": "염창동",
+      "singleHouseholds": 5173,
+      "asOf": "2026-07-31T00:00:00"
+    },
+    {
+      "year": 2026,
+      "dong": "등촌제1동",
+      "singleHouseholds": 8288,
+      "asOf": "2026-07-31T00:00:00"
+    },
+    {
+      "year": 2026,
+      "dong": "등촌제2동",
+      "singleHouseholds": 3347,
+      "asOf": "2026-07-31T00:00:00"
+    },
+    {
+      "year": 2026,
+      "dong": "등촌제3동",
+      "singleHouseholds": 7507,
+      "asOf": "2026-07-31T00:00:00"
+    },
+    {
+      "year": 2026,
+      "dong": "화곡제1동",
+      "singleHouseholds": 15924,
+      "asOf": "2026-07-31T00:00:00"
+    },
+    {
+      "year": 2026,
+      "dong": "화곡제2동",
+      "singleHouseholds": 3662,
+      "asOf": "2026-07-31T00:00:00"
+    },
+    {
+      "year": 2026,
+      "dong": "화곡제3동",
+      "singleHouseholds": 4064,
+      "asOf": "2026-07-31T00:00:00"
+    },
+    {
+      "year": 2026,
+      "dong": "화곡제4동",
+      "singleHouseholds": 4395,
+      "asOf": "2026-07-31T00:00:00"
+    },
+    {
+      "year": 2026,
+      "dong": "화곡본동",
+      "singleHouseholds": 9248,
+      "asOf": "2026-07-31T00:00:00"
+    },
+    {
+      "year": 2026,
+      "dong": "화곡제6동",
+      "singleHouseholds": 7103,
+      "asOf": "2026-07-31T00:00:00"
+    },
+    {
+      "year": 2026,
+      "dong": "화곡제8동",
+      "singleHouseholds": 5398,
+      "asOf": "2026-07-31T00:00:00"
+    },
+    {
+      "year": 2026,
+      "dong": "가양제1동",
+      "singleHouseholds": 14430,
+      "asOf": "2026-07-31T00:00:00"
+    },
+    {
+      "year": 2026,
+      "dong": "가양제2동",
+      "singleHouseholds": 4857,
+      "asOf": "2026-07-31T00:00:00"
+    },
+    {
+      "year": 2026,
+      "dong": "가양제3동",
+      "singleHouseholds": 3794,
+      "asOf": "2026-07-31T00:00:00"
+    },
+    {
+      "year": 2026,
+      "dong": "발산제1동",
+      "singleHouseholds": 3573,
+      "asOf": "2026-07-31T00:00:00"
+    },
+    {
+      "year": 2026,
+      "dong": "우장산동",
+      "singleHouseholds": 5078,
+      "asOf": "2026-07-31T00:00:00"
+    },
+    {
+      "year": 2026,
+      "dong": "공항동",
+      "singleHouseholds": 6214,
+      "asOf": "2026-07-31T00:00:00"
+    },
+    {
+      "year": 2026,
+      "dong": "방화제1동",
+      "singleHouseholds": 5190,
+      "asOf": "2026-07-31T00:00:00"
+    },
+    {
+      "year": 2026,
+      "dong": "방화제2동",
+      "singleHouseholds": 6650,
+      "asOf": "2026-07-31T00:00:00"
+    },
+    {
+      "year": 2026,
+      "dong": "방화제3동",
+      "singleHouseholds": 5398,
+      "asOf": "2026-07-31T00:00:00"
+    }
+  ]
+}

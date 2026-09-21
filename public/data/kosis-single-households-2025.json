@@ -1,0 +1,2951 @@
+{
+  "source": "https://kosis.kr/statisticsList/mass/mass_list.jsp?list_id=&org_id=101&process=statHtml&tbl_id=DT_1PL1502&vw_cd=",
+  "dataset": "성 및 연령별 1인가구 - 시군구",
+  "year": 2025,
+  "scope": "전국·시군구",
+  "regions": [
+    {
+      "regionCode": "00",
+      "region": "전국",
+      "year": 2025,
+      "singleHouseholds": 8244308,
+      "youngSingleHouseholds": 1344297,
+      "male": 4121791,
+      "female": 4122517
+    },
+    {
+      "regionCode": "03",
+      "region": "동부",
+      "year": 2025,
+      "singleHouseholds": 6619155,
+      "youngSingleHouseholds": 1197480,
+      "male": 3272130,
+      "female": 3347025
+    },
+    {
+      "regionCode": "04",
+      "region": "읍부",
+      "year": 2025,
+      "singleHouseholds": 786267,
+      "youngSingleHouseholds": 90857,
+      "male": 420783,
+      "female": 365484
+    },
+    {
+      "regionCode": "05",
+      "region": "면부",
+      "year": 2025,
+      "singleHouseholds": 838886,
+      "youngSingleHouseholds": 55960,
+      "male": 428878,
+      "female": 410008
+    },
+    {
+      "regionCode": "11",
+      "region": "서울특별시",
+      "year": 2025,
+      "singleHouseholds": 1699910,
+      "youngSingleHouseholds": 401537,
+      "male": 788068,
+      "female": 911842
+    },
+    {
+      "regionCode": "11010",
+      "region": "종로구",
+      "year": 2025,
+      "singleHouseholds": 30684,
+      "youngSingleHouseholds": 8144,
+      "male": 14524,
+      "female": 16160
+    },
+    {
+      "regionCode": "11020",
+      "region": "중구",
+      "year": 2025,
+      "singleHouseholds": 29148,
+      "youngSingleHouseholds": 6548,
+      "male": 13772,
+      "female": 15376
+    },
+    {
+      "regionCode": "11030",
+      "region": "용산구",
+      "year": 2025,
+      "singleHouseholds": 40988,
+      "youngSingleHouseholds": 8081,
+      "male": 18518,
+      "female": 22470
+    },
+    {
+      "regionCode": "11040",
+      "region": "성동구",
+      "year": 2025,
+      "singleHouseholds": 48664,
+      "youngSingleHouseholds": 12852,
+      "male": 23368,
+      "female": 25296
+    },
+    {
+      "regionCode": "11050",
+      "region": "광진구",
+      "year": 2025,
+      "singleHouseholds": 75319,
+      "youngSingleHouseholds": 22969,
+      "male": 35655,
+      "female": 39664
+    },
+    {
+      "regionCode": "11060",
+      "region": "동대문구",
+      "year": 2025,
+      "singleHouseholds": 73639,
+      "youngSingleHouseholds": 24976,
+      "male": 35773,
+      "female": 37866
+    },
+    {
+      "regionCode": "11070",
+      "region": "중랑구",
+      "year": 2025,
+      "singleHouseholds": 71249,
+      "youngSingleHouseholds": 10842,
+      "male": 34334,
+      "female": 36915
+    },
+    {
+      "regionCode": "11080",
+      "region": "성북구",
+      "year": 2025,
+      "singleHouseholds": 71799,
+      "youngSingleHouseholds": 22810,
+      "male": 31786,
+      "female": 40013
+    },
+    {
+      "regionCode": "11090",
+      "region": "강북구",
+      "year": 2025,
+      "singleHouseholds": 54655,
+      "youngSingleHouseholds": 9082,
+      "male": 24773,
+      "female": 29882
+    },
+    {
+      "regionCode": "11100",
+      "region": "도봉구",
+      "year": 2025,
+      "singleHouseholds": 44448,
+      "youngSingleHouseholds": 4941,
+      "male": 19636,
+      "female": 24812
+    },
+    {
+      "regionCode": "11110",
+      "region": "노원구",
+      "year": 2025,
+      "singleHouseholds": 68464,
+      "youngSingleHouseholds": 11691,
+      "male": 28992,
+      "female": 39472
+    },
+    {
+      "regionCode": "11120",
+      "region": "은평구",
+      "year": 2025,
+      "singleHouseholds": 71796,
+      "youngSingleHouseholds": 12229,
+      "male": 30062,
+      "female": 41734
+    },
+    {
+      "regionCode": "11130",
+      "region": "서대문구",
+      "year": 2025,
+      "singleHouseholds": 57273,
+      "youngSingleHouseholds": 18668,
+      "male": 24626,
+      "female": 32647
+    },
+    {
+      "regionCode": "11140",
+      "region": "마포구",
+      "year": 2025,
+      "singleHouseholds": 73242,
+      "youngSingleHouseholds": 21016,
+      "male": 31105,
+      "female": 42137
+    },
+    {
+      "regionCode": "11150",
+      "region": "양천구",
+      "year": 2025,
+      "singleHouseholds": 49370,
+      "youngSingleHouseholds": 5742,
+      "male": 22371,
+      "female": 26999
+    },
+    {
+      "regionCode": "11160",
+      "region": "강서구",
+      "year": 2025,
+      "singleHouseholds": 108459,
+      "youngSingleHouseholds": 22049,
+      "male": 48612,
+      "female": 59847
+    },
+    {
+      "regionCode": "11170",
+      "region": "구로구",
+      "year": 2025,
+      "singleHouseholds": 65153,
+      "youngSingleHouseholds": 12207,
+      "male": 31463,
+      "female": 33690
+    },
+    {
+      "regionCode": "11180",
+      "region": "금천구",
+      "year": 2025,
+      "singleHouseholds": 55126,
+      "youngSingleHouseholds": 12261,
+      "male": 28891,
+      "female": 26235
+    },
+    {
+      "regionCode": "11190",
+      "region": "영등포구",
+      "year": 2025,
+      "singleHouseholds": 81908,
+      "youngSingleHouseholds": 20281,
+      "male": 39782,
+      "female": 42126
+    },
+    {
+      "regionCode": "11200",
+      "region": "동작구",
+      "year": 2025,
+      "singleHouseholds": 78375,
+      "youngSingleHouseholds": 25756,
+      "male": 37718,
+      "female": 40657
+    },
+    {
+      "regionCode": "11210",
+      "region": "관악구",
+      "year": 2025,
+      "singleHouseholds": 158667,
+      "youngSingleHouseholds": 57976,
+      "male": 84027,
+      "female": 74640
+    },
+    {
+      "regionCode": "11220",
+      "region": "서초구",
+      "year": 2025,
+      "singleHouseholds": 50435,
+      "youngSingleHouseholds": 9024,
+      "male": 21891,
+      "female": 28544
+    },
+    {
+      "regionCode": "11230",
+      "region": "강남구",
+      "year": 2025,
+      "singleHouseholds": 79351,
+      "youngSingleHouseholds": 13785,
+      "male": 33924,
+      "female": 45427
+    },
+    {
+      "regionCode": "11240",
+      "region": "송파구",
+      "year": 2025,
+      "singleHouseholds": 91108,
+      "youngSingleHouseholds": 15960,
+      "male": 40261,
+      "female": 50847
+    },
+    {
+      "regionCode": "11250",
+      "region": "강동구",
+      "year": 2025,
+      "singleHouseholds": 70590,
+      "youngSingleHouseholds": 11647,
+      "male": 32204,
+      "female": 38386
+    },
+    {
+      "regionCode": "21",
+      "region": "부산광역시",
+      "year": 2025,
+      "singleHouseholds": 556515,
+      "youngSingleHouseholds": 89948,
+      "male": 251174,
+      "female": 305341
+    },
+    {
+      "regionCode": "21003",
+      "region": "동부",
+      "year": 2025,
+      "singleHouseholds": 532873,
+      "youngSingleHouseholds": 87859,
+      "male": 239602,
+      "female": 293271
+    },
+    {
+      "regionCode": "21004",
+      "region": "읍부",
+      "year": 2025,
+      "singleHouseholds": 22460,
+      "youngSingleHouseholds": 2072,
+      "male": 11043,
+      "female": 11417
+    },
+    {
+      "regionCode": "21005",
+      "region": "면부",
+      "year": 2025,
+      "singleHouseholds": 1182,
+      "youngSingleHouseholds": 15,
+      "male": 529,
+      "female": 653
+    },
+    {
+      "regionCode": "21010",
+      "region": "중구",
+      "year": 2025,
+      "singleHouseholds": 12086,
+      "youngSingleHouseholds": 2338,
+      "male": 5641,
+      "female": 6445
+    },
+    {
+      "regionCode": "21020",
+      "region": "서구",
+      "year": 2025,
+      "singleHouseholds": 21237,
+      "youngSingleHouseholds": 3759,
+      "male": 9048,
+      "female": 12189
+    },
+    {
+      "regionCode": "21030",
+      "region": "동구",
+      "year": 2025,
+      "singleHouseholds": 18862,
+      "youngSingleHouseholds": 2253,
+      "male": 8631,
+      "female": 10231
+    },
+    {
+      "regionCode": "21040",
+      "region": "영도구",
+      "year": 2025,
+      "singleHouseholds": 20608,
+      "youngSingleHouseholds": 1938,
+      "male": 9682,
+      "female": 10926
+    },
+    {
+      "regionCode": "21050",
+      "region": "부산진구",
+      "year": 2025,
+      "singleHouseholds": 75972,
+      "youngSingleHouseholds": 17405,
+      "male": 33262,
+      "female": 42710
+    },
+    {
+      "regionCode": "21060",
+      "region": "동래구",
+      "year": 2025,
+      "singleHouseholds": 37137,
+      "youngSingleHouseholds": 4347,
+      "male": 15673,
+      "female": 21464
+    },
+    {
+      "regionCode": "21070",
+      "region": "남구",
+      "year": 2025,
+      "singleHouseholds": 41885,
+      "youngSingleHouseholds": 10684,
+      "male": 18882,
+      "female": 23003
+    },
+    {
+      "regionCode": "21080",
+      "region": "북구",
+      "year": 2025,
+      "singleHouseholds": 38574,
+      "youngSingleHouseholds": 2679,
+      "male": 17348,
+      "female": 21226
+    },
+    {
+      "regionCode": "21090",
+      "region": "해운대구",
+      "year": 2025,
+      "singleHouseholds": 52417,
+      "youngSingleHouseholds": 5001,
+      "male": 21243,
+      "female": 31174
+    },
+    {
+      "regionCode": "21100",
+      "region": "사하구",
+      "year": 2025,
+      "singleHouseholds": 48445,
+      "youngSingleHouseholds": 6467,
+      "male": 23453,
+      "female": 24992
+    },
+    {
+      "regionCode": "21110",
+      "region": "금정구",
+      "year": 2025,
+      "singleHouseholds": 42085,
+      "youngSingleHouseholds": 11332,
+      "male": 19751,
+      "female": 22334
+    },
+    {
+      "regionCode": "21120",
+      "region": "강서구",
+      "year": 2025,
+      "singleHouseholds": 17786,
+      "youngSingleHouseholds": 2221,
+      "male": 10635,
+      "female": 7151
+    },
+    {
+      "regionCode": "21130",
+      "region": "연제구",
+      "year": 2025,
+      "singleHouseholds": 33737,
+      "youngSingleHouseholds": 4894,
+      "male": 13802,
+      "female": 19935
+    },
+    {
+      "regionCode": "21140",
+      "region": "수영구",
+      "year": 2025,
+      "singleHouseholds": 34645,
+      "youngSingleHouseholds": 6665,
+      "male": 14360,
+      "female": 20285
+    },
+    {
+      "regionCode": "21150",
+      "region": "사상구",
+      "year": 2025,
+      "singleHouseholds": 37397,
+      "youngSingleHouseholds": 5876,
+      "male": 18191,
+      "female": 19206
+    },
+    {
+      "regionCode": "21510",
+      "region": "기장군",
+      "year": 2025,
+      "singleHouseholds": 23642,
+      "youngSingleHouseholds": 2089,
+      "male": 11572,
+      "female": 12070
+    },
+    {
+      "regionCode": "22",
+      "region": "대구광역시",
+      "year": 2025,
+      "singleHouseholds": 380310,
+      "youngSingleHouseholds": 56775,
+      "male": 175599,
+      "female": 204711
+    },
+    {
+      "regionCode": "22003",
+      "region": "동부",
+      "year": 2025,
+      "singleHouseholds": 343650,
+      "youngSingleHouseholds": 53291,
+      "male": 156524,
+      "female": 187126
+    },
+    {
+      "regionCode": "22004",
+      "region": "읍부",
+      "year": 2025,
+      "singleHouseholds": 29208,
+      "youngSingleHouseholds": 2919,
+      "male": 15174,
+      "female": 14034
+    },
+    {
+      "regionCode": "22005",
+      "region": "면부",
+      "year": 2025,
+      "singleHouseholds": 7452,
+      "youngSingleHouseholds": 565,
+      "male": 3901,
+      "female": 3551
+    },
+    {
+      "regionCode": "22010",
+      "region": "중구",
+      "year": 2025,
+      "singleHouseholds": 19881,
+      "youngSingleHouseholds": 5419,
+      "male": 8891,
+      "female": 10990
+    },
+    {
+      "regionCode": "22020",
+      "region": "동구",
+      "year": 2025,
+      "singleHouseholds": 57636,
+      "youngSingleHouseholds": 6531,
+      "male": 26039,
+      "female": 31597
+    },
+    {
+      "regionCode": "22030",
+      "region": "서구",
+      "year": 2025,
+      "singleHouseholds": 31001,
+      "youngSingleHouseholds": 2086,
+      "male": 14796,
+      "female": 16205
+    },
+    {
+      "regionCode": "22040",
+      "region": "남구",
+      "year": 2025,
+      "singleHouseholds": 34383,
+      "youngSingleHouseholds": 6336,
+      "male": 15058,
+      "female": 19325
+    },
+    {
+      "regionCode": "22050",
+      "region": "북구",
+      "year": 2025,
+      "singleHouseholds": 69664,
+      "youngSingleHouseholds": 14778,
+      "male": 34244,
+      "female": 35420
+    },
+    {
+      "regionCode": "22060",
+      "region": "수성구",
+      "year": 2025,
+      "singleHouseholds": 50040,
+      "youngSingleHouseholds": 5728,
+      "male": 20034,
+      "female": 30006
+    },
+    {
+      "regionCode": "22070",
+      "region": "달서구",
+      "year": 2025,
+      "singleHouseholds": 81045,
+      "youngSingleHouseholds": 12413,
+      "male": 37462,
+      "female": 43583
+    },
+    {
+      "regionCode": "22510",
+      "region": "달성군",
+      "year": 2025,
+      "singleHouseholds": 32609,
+      "youngSingleHouseholds": 3346,
+      "male": 17304,
+      "female": 15305
+    },
+    {
+      "regionCode": "22520",
+      "region": "군위군",
+      "year": 2025,
+      "singleHouseholds": 4051,
+      "youngSingleHouseholds": 138,
+      "male": 1771,
+      "female": 2280
+    },
+    {
+      "regionCode": "23",
+      "region": "인천광역시",
+      "year": 2025,
+      "singleHouseholds": 429411,
+      "youngSingleHouseholds": 57808,
+      "male": 221644,
+      "female": 207767
+    },
+    {
+      "regionCode": "23003",
+      "region": "동부",
+      "year": 2025,
+      "singleHouseholds": 414377,
+      "youngSingleHouseholds": 56662,
+      "male": 213764,
+      "female": 200613
+    },
+    {
+      "regionCode": "23004",
+      "region": "읍부",
+      "year": 2025,
+      "singleHouseholds": 3049,
+      "youngSingleHouseholds": 182,
+      "male": 1361,
+      "female": 1688
+    },
+    {
+      "regionCode": "23005",
+      "region": "면부",
+      "year": 2025,
+      "singleHouseholds": 11985,
+      "youngSingleHouseholds": 964,
+      "male": 6519,
+      "female": 5466
+    },
+    {
+      "regionCode": "23010",
+      "region": "중구",
+      "year": 2025,
+      "singleHouseholds": 33664,
+      "youngSingleHouseholds": 7833,
+      "male": 19323,
+      "female": 14341
+    },
+    {
+      "regionCode": "23020",
+      "region": "동구",
+      "year": 2025,
+      "singleHouseholds": 8731,
+      "youngSingleHouseholds": 447,
+      "male": 4204,
+      "female": 4527
+    },
+    {
+      "regionCode": "23040",
+      "region": "연수구",
+      "year": 2025,
+      "singleHouseholds": 42346,
+      "youngSingleHouseholds": 7498,
+      "male": 21349,
+      "female": 20997
+    },
+    {
+      "regionCode": "23050",
+      "region": "남동구",
+      "year": 2025,
+      "singleHouseholds": 74170,
+      "youngSingleHouseholds": 8983,
+      "male": 36875,
+      "female": 37295
+    },
+    {
+      "regionCode": "23060",
+      "region": "부평구",
+      "year": 2025,
+      "singleHouseholds": 69960,
+      "youngSingleHouseholds": 7274,
+      "male": 33763,
+      "female": 36197
+    },
+    {
+      "regionCode": "23070",
+      "region": "계양구",
+      "year": 2025,
+      "singleHouseholds": 38610,
+      "youngSingleHouseholds": 3105,
+      "male": 19353,
+      "female": 19257
+    },
+    {
+      "regionCode": "23080",
+      "region": "서구",
+      "year": 2025,
+      "singleHouseholds": 75328,
+      "youngSingleHouseholds": 9187,
+      "male": 40882,
+      "female": 34446
+    },
+    {
+      "regionCode": "23090",
+      "region": "미추홀구",
+      "year": 2025,
+      "singleHouseholds": 71568,
+      "youngSingleHouseholds": 12335,
+      "male": 38015,
+      "female": 33553
+    },
+    {
+      "regionCode": "23510",
+      "region": "강화군",
+      "year": 2025,
+      "singleHouseholds": 10139,
+      "youngSingleHouseholds": 421,
+      "male": 4679,
+      "female": 5460
+    },
+    {
+      "regionCode": "23520",
+      "region": "옹진군",
+      "year": 2025,
+      "singleHouseholds": 4895,
+      "youngSingleHouseholds": 725,
+      "male": 3201,
+      "female": 1694
+    },
+    {
+      "regionCode": "24",
+      "region": "광주광역시",
+      "year": 2025,
+      "singleHouseholds": 237702,
+      "youngSingleHouseholds": 42336,
+      "male": 117491,
+      "female": 120211
+    },
+    {
+      "regionCode": "24010",
+      "region": "동구",
+      "year": 2025,
+      "singleHouseholds": 24188,
+      "youngSingleHouseholds": 7165,
+      "male": 11857,
+      "female": 12331
+    },
+    {
+      "regionCode": "24020",
+      "region": "서구",
+      "year": 2025,
+      "singleHouseholds": 49957,
+      "youngSingleHouseholds": 8266,
+      "male": 23822,
+      "female": 26135
+    },
+    {
+      "regionCode": "24030",
+      "region": "남구",
+      "year": 2025,
+      "singleHouseholds": 31178,
+      "youngSingleHouseholds": 4433,
+      "male": 13937,
+      "female": 17241
+    },
+    {
+      "regionCode": "24040",
+      "region": "북구",
+      "year": 2025,
+      "singleHouseholds": 75519,
+      "youngSingleHouseholds": 12677,
+      "male": 37208,
+      "female": 38311
+    },
+    {
+      "regionCode": "24050",
+      "region": "광산구",
+      "year": 2025,
+      "singleHouseholds": 56860,
+      "youngSingleHouseholds": 9795,
+      "male": 30667,
+      "female": 26193
+    },
+    {
+      "regionCode": "25",
+      "region": "대전광역시",
+      "year": 2025,
+      "singleHouseholds": 268211,
+      "youngSingleHouseholds": 68920,
+      "male": 135767,
+      "female": 132444
+    },
+    {
+      "regionCode": "25010",
+      "region": "동구",
+      "year": 2025,
+      "singleHouseholds": 48245,
+      "youngSingleHouseholds": 13041,
+      "male": 24862,
+      "female": 23383
+    },
+    {
+      "regionCode": "25020",
+      "region": "중구",
+      "year": 2025,
+      "singleHouseholds": 38440,
+      "youngSingleHouseholds": 5752,
+      "male": 17891,
+      "female": 20549
+    },
+    {
+      "regionCode": "25030",
+      "region": "서구",
+      "year": 2025,
+      "singleHouseholds": 86267,
+      "youngSingleHouseholds": 23673,
+      "male": 41454,
+      "female": 44813
+    },
+    {
+      "regionCode": "25040",
+      "region": "유성구",
+      "year": 2025,
+      "singleHouseholds": 66145,
+      "youngSingleHouseholds": 22210,
+      "male": 36461,
+      "female": 29684
+    },
+    {
+      "regionCode": "25050",
+      "region": "대덕구",
+      "year": 2025,
+      "singleHouseholds": 29114,
+      "youngSingleHouseholds": 4244,
+      "male": 15099,
+      "female": 14015
+    },
+    {
+      "regionCode": "26",
+      "region": "울산광역시",
+      "year": 2025,
+      "singleHouseholds": 150586,
+      "youngSingleHouseholds": 19075,
+      "male": 83960,
+      "female": 66626
+    },
+    {
+      "regionCode": "26003",
+      "region": "동부",
+      "year": 2025,
+      "singleHouseholds": 120661,
+      "youngSingleHouseholds": 16043,
+      "male": 66717,
+      "female": 53944
+    },
+    {
+      "regionCode": "26004",
+      "region": "읍부",
+      "year": 2025,
+      "singleHouseholds": 24031,
+      "youngSingleHouseholds": 2667,
+      "male": 14140,
+      "female": 9891
+    },
+    {
+      "regionCode": "26005",
+      "region": "면부",
+      "year": 2025,
+      "singleHouseholds": 5894,
+      "youngSingleHouseholds": 365,
+      "male": 3103,
+      "female": 2791
+    },
+    {
+      "regionCode": "26010",
+      "region": "중구",
+      "year": 2025,
+      "singleHouseholds": 29340,
+      "youngSingleHouseholds": 2661,
+      "male": 14913,
+      "female": 14427
+    },
+    {
+      "regionCode": "26020",
+      "region": "남구",
+      "year": 2025,
+      "singleHouseholds": 48002,
+      "youngSingleHouseholds": 8231,
+      "male": 26033,
+      "female": 21969
+    },
+    {
+      "regionCode": "26030",
+      "region": "동구",
+      "year": 2025,
+      "singleHouseholds": 21017,
+      "youngSingleHouseholds": 2328,
+      "male": 12422,
+      "female": 8595
+    },
+    {
+      "regionCode": "26040",
+      "region": "북구",
+      "year": 2025,
+      "singleHouseholds": 22302,
+      "youngSingleHouseholds": 2823,
+      "male": 13349,
+      "female": 8953
+    },
+    {
+      "regionCode": "26510",
+      "region": "울주군",
+      "year": 2025,
+      "singleHouseholds": 29925,
+      "youngSingleHouseholds": 3032,
+      "male": 17243,
+      "female": 12682
+    },
+    {
+      "regionCode": "29",
+      "region": "세종특별자치시",
+      "year": 2025,
+      "singleHouseholds": 53627,
+      "youngSingleHouseholds": 13296,
+      "male": 27607,
+      "female": 26020
+    },
+    {
+      "regionCode": "29003",
+      "region": "동부",
+      "year": 2025,
+      "singleHouseholds": 30961,
+      "youngSingleHouseholds": 5383,
+      "male": 14302,
+      "female": 16659
+    },
+    {
+      "regionCode": "29004",
+      "region": "읍부",
+      "year": 2025,
+      "singleHouseholds": 10898,
+      "youngSingleHouseholds": 4643,
+      "male": 6313,
+      "female": 4585
+    },
+    {
+      "regionCode": "29005",
+      "region": "면부",
+      "year": 2025,
+      "singleHouseholds": 11768,
+      "youngSingleHouseholds": 3270,
+      "male": 6992,
+      "female": 4776
+    },
+    {
+      "regionCode": "29010",
+      "region": "세종시",
+      "year": 2025,
+      "singleHouseholds": 53627,
+      "youngSingleHouseholds": 13296,
+      "male": 27607,
+      "female": 26020
+    },
+    {
+      "regionCode": "31",
+      "region": "경기도",
+      "year": 2025,
+      "singleHouseholds": 1822657,
+      "youngSingleHouseholds": 253926,
+      "male": 975657,
+      "female": 847000
+    },
+    {
+      "regionCode": "31003",
+      "region": "동부",
+      "year": 2025,
+      "singleHouseholds": 1502263,
+      "youngSingleHouseholds": 220639,
+      "male": 788709,
+      "female": 713554
+    },
+    {
+      "regionCode": "31004",
+      "region": "읍부",
+      "year": 2025,
+      "singleHouseholds": 195536,
+      "youngSingleHouseholds": 21630,
+      "male": 113298,
+      "female": 82238
+    },
+    {
+      "regionCode": "31005",
+      "region": "면부",
+      "year": 2025,
+      "singleHouseholds": 124858,
+      "youngSingleHouseholds": 11657,
+      "male": 73650,
+      "female": 51208
+    },
+    {
+      "regionCode": "31010",
+      "region": "수원시",
+      "year": 2025,
+      "singleHouseholds": 186214,
+      "youngSingleHouseholds": 40567,
+      "male": 100226,
+      "female": 85988
+    },
+    {
+      "regionCode": "31011",
+      "region": "장안구",
+      "year": 2025,
+      "singleHouseholds": 39063,
+      "youngSingleHouseholds": 8447,
+      "male": 20898,
+      "female": 18165
+    },
+    {
+      "regionCode": "31012",
+      "region": "권선구",
+      "year": 2025,
+      "singleHouseholds": 55361,
+      "youngSingleHouseholds": 8334,
+      "male": 29928,
+      "female": 25433
+    },
+    {
+      "regionCode": "31013",
+      "region": "팔달구",
+      "year": 2025,
+      "singleHouseholds": 39286,
+      "youngSingleHouseholds": 8528,
+      "male": 20929,
+      "female": 18357
+    },
+    {
+      "regionCode": "31014",
+      "region": "영통구",
+      "year": 2025,
+      "singleHouseholds": 52504,
+      "youngSingleHouseholds": 15258,
+      "male": 28471,
+      "female": 24033
+    },
+    {
+      "regionCode": "31020",
+      "region": "성남시",
+      "year": 2025,
+      "singleHouseholds": 135448,
+      "youngSingleHouseholds": 21160,
+      "male": 69645,
+      "female": 65803
+    },
+    {
+      "regionCode": "31021",
+      "region": "수정구",
+      "year": 2025,
+      "singleHouseholds": 46545,
+      "youngSingleHouseholds": 7698,
+      "male": 25473,
+      "female": 21072
+    },
+    {
+      "regionCode": "31022",
+      "region": "중원구",
+      "year": 2025,
+      "singleHouseholds": 36226,
+      "youngSingleHouseholds": 5224,
+      "male": 19610,
+      "female": 16616
+    },
+    {
+      "regionCode": "31023",
+      "region": "분당구",
+      "year": 2025,
+      "singleHouseholds": 52677,
+      "youngSingleHouseholds": 8238,
+      "male": 24562,
+      "female": 28115
+    },
+    {
+      "regionCode": "31030",
+      "region": "의정부시",
+      "year": 2025,
+      "singleHouseholds": 65966,
+      "youngSingleHouseholds": 7990,
+      "male": 31878,
+      "female": 34088
+    },
+    {
+      "regionCode": "31040",
+      "region": "안양시",
+      "year": 2025,
+      "singleHouseholds": 64523,
+      "youngSingleHouseholds": 8045,
+      "male": 31648,
+      "female": 32875
+    },
+    {
+      "regionCode": "31041",
+      "region": "만안구",
+      "year": 2025,
+      "singleHouseholds": 31630,
+      "youngSingleHouseholds": 4011,
+      "male": 16210,
+      "female": 15420
+    },
+    {
+      "regionCode": "31042",
+      "region": "동안구",
+      "year": 2025,
+      "singleHouseholds": 32893,
+      "youngSingleHouseholds": 4034,
+      "male": 15438,
+      "female": 17455
+    },
+    {
+      "regionCode": "31050",
+      "region": "부천시",
+      "year": 2025,
+      "singleHouseholds": 104884,
+      "youngSingleHouseholds": 10841,
+      "male": 51793,
+      "female": 53091
+    },
+    {
+      "regionCode": "31051",
+      "region": "원미구",
+      "year": 2025,
+      "singleHouseholds": 55659,
+      "youngSingleHouseholds": 7601,
+      "male": 27263,
+      "female": 28396
+    },
+    {
+      "regionCode": "31052",
+      "region": "소사구",
+      "year": 2025,
+      "singleHouseholds": 27706,
+      "youngSingleHouseholds": 2044,
+      "male": 13190,
+      "female": 14516
+    },
+    {
+      "regionCode": "31053",
+      "region": "오정구",
+      "year": 2025,
+      "singleHouseholds": 21519,
+      "youngSingleHouseholds": 1196,
+      "male": 11340,
+      "female": 10179
+    },
+    {
+      "regionCode": "31060",
+      "region": "광명시",
+      "year": 2025,
+      "singleHouseholds": 30319,
+      "youngSingleHouseholds": 2364,
+      "male": 13990,
+      "female": 16329
+    },
+    {
+      "regionCode": "31070",
+      "region": "평택시",
+      "year": 2025,
+      "singleHouseholds": 100083,
+      "youngSingleHouseholds": 17055,
+      "male": 61662,
+      "female": 38421
+    },
+    {
+      "regionCode": "31080",
+      "region": "동두천시",
+      "year": 2025,
+      "singleHouseholds": 15255,
+      "youngSingleHouseholds": 998,
+      "male": 7672,
+      "female": 7583
+    },
+    {
+      "regionCode": "31090",
+      "region": "안산시",
+      "year": 2025,
+      "singleHouseholds": 97259,
+      "youngSingleHouseholds": 14259,
+      "male": 55610,
+      "female": 41649
+    },
+    {
+      "regionCode": "31091",
+      "region": "상록구",
+      "year": 2025,
+      "singleHouseholds": 52156,
+      "youngSingleHouseholds": 7571,
+      "male": 29620,
+      "female": 22536
+    },
+    {
+      "regionCode": "31092",
+      "region": "단원구",
+      "year": 2025,
+      "singleHouseholds": 45103,
+      "youngSingleHouseholds": 6688,
+      "male": 25990,
+      "female": 19113
+    },
+    {
+      "regionCode": "31100",
+      "region": "고양시",
+      "year": 2025,
+      "singleHouseholds": 132693,
+      "youngSingleHouseholds": 14525,
+      "male": 62742,
+      "female": 69951
+    },
+    {
+      "regionCode": "31101",
+      "region": "덕양구",
+      "year": 2025,
+      "singleHouseholds": 66395,
+      "youngSingleHouseholds": 6915,
+      "male": 32294,
+      "female": 34101
+    },
+    {
+      "regionCode": "31103",
+      "region": "일산동구",
+      "year": 2025,
+      "singleHouseholds": 39825,
+      "youngSingleHouseholds": 5407,
+      "male": 18796,
+      "female": 21029
+    },
+    {
+      "regionCode": "31104",
+      "region": "일산서구",
+      "year": 2025,
+      "singleHouseholds": 26473,
+      "youngSingleHouseholds": 2203,
+      "male": 11652,
+      "female": 14821
+    },
+    {
+      "regionCode": "31110",
+      "region": "과천시",
+      "year": 2025,
+      "singleHouseholds": 4671,
+      "youngSingleHouseholds": 339,
+      "male": 2099,
+      "female": 2572
+    },
+    {
+      "regionCode": "31120",
+      "region": "구리시",
+      "year": 2025,
+      "singleHouseholds": 22895,
+      "youngSingleHouseholds": 2247,
+      "male": 11529,
+      "female": 11366
+    },
+    {
+      "regionCode": "31130",
+      "region": "남양주시",
+      "year": 2025,
+      "singleHouseholds": 74161,
+      "youngSingleHouseholds": 5916,
+      "male": 36330,
+      "female": 37831
+    },
+    {
+      "regionCode": "31140",
+      "region": "오산시",
+      "year": 2025,
+      "singleHouseholds": 40193,
+      "youngSingleHouseholds": 5485,
+      "male": 24863,
+      "female": 15330
+    },
+    {
+      "regionCode": "31150",
+      "region": "시흥시",
+      "year": 2025,
+      "singleHouseholds": 70346,
+      "youngSingleHouseholds": 7376,
+      "male": 43387,
+      "female": 26959
+    },
+    {
+      "regionCode": "31160",
+      "region": "군포시",
+      "year": 2025,
+      "singleHouseholds": 33306,
+      "youngSingleHouseholds": 3499,
+      "male": 16593,
+      "female": 16713
+    },
+    {
+      "regionCode": "31170",
+      "region": "의왕시",
+      "year": 2025,
+      "singleHouseholds": 15127,
+      "youngSingleHouseholds": 1728,
+      "male": 7309,
+      "female": 7818
+    },
+    {
+      "regionCode": "31180",
+      "region": "하남시",
+      "year": 2025,
+      "singleHouseholds": 40140,
+      "youngSingleHouseholds": 5305,
+      "male": 20256,
+      "female": 19884
+    },
+    {
+      "regionCode": "31190",
+      "region": "용인시",
+      "year": 2025,
+      "singleHouseholds": 114353,
+      "youngSingleHouseholds": 21474,
+      "male": 58919,
+      "female": 55434
+    },
+    {
+      "regionCode": "31191",
+      "region": "처인구",
+      "year": 2025,
+      "singleHouseholds": 40436,
+      "youngSingleHouseholds": 7543,
+      "male": 22968,
+      "female": 17468
+    },
+    {
+      "regionCode": "31192",
+      "region": "기흥구",
+      "year": 2025,
+      "singleHouseholds": 44147,
+      "youngSingleHouseholds": 7632,
+      "male": 22040,
+      "female": 22107
+    },
+    {
+      "regionCode": "31193",
+      "region": "수지구",
+      "year": 2025,
+      "singleHouseholds": 29770,
+      "youngSingleHouseholds": 6299,
+      "male": 13911,
+      "female": 15859
+    },
+    {
+      "regionCode": "31200",
+      "region": "파주시",
+      "year": 2025,
+      "singleHouseholds": 61849,
+      "youngSingleHouseholds": 6432,
+      "male": 33440,
+      "female": 28409
+    },
+    {
+      "regionCode": "31210",
+      "region": "이천시",
+      "year": 2025,
+      "singleHouseholds": 33187,
+      "youngSingleHouseholds": 5290,
+      "male": 19163,
+      "female": 14024
+    },
+    {
+      "regionCode": "31220",
+      "region": "안성시",
+      "year": 2025,
+      "singleHouseholds": 33876,
+      "youngSingleHouseholds": 5863,
+      "male": 18833,
+      "female": 15043
+    },
+    {
+      "regionCode": "31230",
+      "region": "김포시",
+      "year": 2025,
+      "singleHouseholds": 55522,
+      "youngSingleHouseholds": 6909,
+      "male": 29062,
+      "female": 26460
+    },
+    {
+      "regionCode": "31240",
+      "region": "화성시",
+      "year": 2025,
+      "singleHouseholds": 128844,
+      "youngSingleHouseholds": 24231,
+      "male": 78962,
+      "female": 49882
+    },
+    {
+      "regionCode": "31250",
+      "region": "광주시",
+      "year": 2025,
+      "singleHouseholds": 45804,
+      "youngSingleHouseholds": 3562,
+      "male": 26021,
+      "female": 19783
+    },
+    {
+      "regionCode": "31260",
+      "region": "양주시",
+      "year": 2025,
+      "singleHouseholds": 36789,
+      "youngSingleHouseholds": 4030,
+      "male": 19793,
+      "female": 16996
+    },
+    {
+      "regionCode": "31270",
+      "region": "포천시",
+      "year": 2025,
+      "singleHouseholds": 23568,
+      "youngSingleHouseholds": 2305,
+      "male": 13566,
+      "female": 10002
+    },
+    {
+      "regionCode": "31280",
+      "region": "여주시",
+      "year": 2025,
+      "singleHouseholds": 17655,
+      "youngSingleHouseholds": 1515,
+      "male": 9218,
+      "female": 8437
+    },
+    {
+      "regionCode": "31550",
+      "region": "연천군",
+      "year": 2025,
+      "singleHouseholds": 7591,
+      "youngSingleHouseholds": 859,
+      "male": 4143,
+      "female": 3448
+    },
+    {
+      "regionCode": "31570",
+      "region": "가평군",
+      "year": 2025,
+      "singleHouseholds": 11159,
+      "youngSingleHouseholds": 871,
+      "male": 5766,
+      "female": 5393
+    },
+    {
+      "regionCode": "31580",
+      "region": "양평군",
+      "year": 2025,
+      "singleHouseholds": 18977,
+      "youngSingleHouseholds": 886,
+      "male": 9539,
+      "female": 9438
+    },
+    {
+      "regionCode": "32",
+      "region": "강원특별자치도",
+      "year": 2025,
+      "singleHouseholds": 283325,
+      "youngSingleHouseholds": 40509,
+      "male": 142732,
+      "female": 140593
+    },
+    {
+      "regionCode": "32003",
+      "region": "동부",
+      "year": 2025,
+      "singleHouseholds": 168760,
+      "youngSingleHouseholds": 29629,
+      "male": 82729,
+      "female": 86031
+    },
+    {
+      "regionCode": "32004",
+      "region": "읍부",
+      "year": 2025,
+      "singleHouseholds": 43760,
+      "youngSingleHouseholds": 3878,
+      "male": 22066,
+      "female": 21694
+    },
+    {
+      "regionCode": "32005",
+      "region": "면부",
+      "year": 2025,
+      "singleHouseholds": 70805,
+      "youngSingleHouseholds": 7002,
+      "male": 37937,
+      "female": 32868
+    },
+    {
+      "regionCode": "32010",
+      "region": "춘천시",
+      "year": 2025,
+      "singleHouseholds": 52308,
+      "youngSingleHouseholds": 11925,
+      "male": 25291,
+      "female": 27017
+    },
+    {
+      "regionCode": "32020",
+      "region": "원주시",
+      "year": 2025,
+      "singleHouseholds": 64981,
+      "youngSingleHouseholds": 10721,
+      "male": 32310,
+      "female": 32671
+    },
+    {
+      "regionCode": "32030",
+      "region": "강릉시",
+      "year": 2025,
+      "singleHouseholds": 40615,
+      "youngSingleHouseholds": 7233,
+      "male": 19861,
+      "female": 20754
+    },
+    {
+      "regionCode": "32040",
+      "region": "동해시",
+      "year": 2025,
+      "singleHouseholds": 15048,
+      "youngSingleHouseholds": 1093,
+      "male": 7450,
+      "female": 7598
+    },
+    {
+      "regionCode": "32050",
+      "region": "태백시",
+      "year": 2025,
+      "singleHouseholds": 7653,
+      "youngSingleHouseholds": 385,
+      "male": 3768,
+      "female": 3885
+    },
+    {
+      "regionCode": "32060",
+      "region": "속초시",
+      "year": 2025,
+      "singleHouseholds": 15201,
+      "youngSingleHouseholds": 1106,
+      "male": 7389,
+      "female": 7812
+    },
+    {
+      "regionCode": "32070",
+      "region": "삼척시",
+      "year": 2025,
+      "singleHouseholds": 13080,
+      "youngSingleHouseholds": 2272,
+      "male": 7005,
+      "female": 6075
+    },
+    {
+      "regionCode": "32510",
+      "region": "홍천군",
+      "year": 2025,
+      "singleHouseholds": 12438,
+      "youngSingleHouseholds": 822,
+      "male": 6609,
+      "female": 5829
+    },
+    {
+      "regionCode": "32520",
+      "region": "횡성군",
+      "year": 2025,
+      "singleHouseholds": 8285,
+      "youngSingleHouseholds": 331,
+      "male": 4337,
+      "female": 3948
+    },
+    {
+      "regionCode": "32530",
+      "region": "영월군",
+      "year": 2025,
+      "singleHouseholds": 7648,
+      "youngSingleHouseholds": 313,
+      "male": 4033,
+      "female": 3615
+    },
+    {
+      "regionCode": "32540",
+      "region": "평창군",
+      "year": 2025,
+      "singleHouseholds": 8244,
+      "youngSingleHouseholds": 364,
+      "male": 4379,
+      "female": 3865
+    },
+    {
+      "regionCode": "32550",
+      "region": "정선군",
+      "year": 2025,
+      "singleHouseholds": 7252,
+      "youngSingleHouseholds": 297,
+      "male": 3870,
+      "female": 3382
+    },
+    {
+      "regionCode": "32560",
+      "region": "철원군",
+      "year": 2025,
+      "singleHouseholds": 6192,
+      "youngSingleHouseholds": 685,
+      "male": 3063,
+      "female": 3129
+    },
+    {
+      "regionCode": "32570",
+      "region": "화천군",
+      "year": 2025,
+      "singleHouseholds": 4309,
+      "youngSingleHouseholds": 748,
+      "male": 2545,
+      "female": 1764
+    },
+    {
+      "regionCode": "32580",
+      "region": "양구군",
+      "year": 2025,
+      "singleHouseholds": 3449,
+      "youngSingleHouseholds": 577,
+      "male": 1907,
+      "female": 1542
+    },
+    {
+      "regionCode": "32590",
+      "region": "인제군",
+      "year": 2025,
+      "singleHouseholds": 5758,
+      "youngSingleHouseholds": 911,
+      "male": 3492,
+      "female": 2266
+    },
+    {
+      "regionCode": "32600",
+      "region": "고성군",
+      "year": 2025,
+      "singleHouseholds": 5332,
+      "youngSingleHouseholds": 464,
+      "male": 2668,
+      "female": 2664
+    },
+    {
+      "regionCode": "32610",
+      "region": "양양군",
+      "year": 2025,
+      "singleHouseholds": 5532,
+      "youngSingleHouseholds": 262,
+      "male": 2755,
+      "female": 2777
+    },
+    {
+      "regionCode": "33",
+      "region": "충청북도",
+      "year": 2025,
+      "singleHouseholds": 292097,
+      "youngSingleHouseholds": 48003,
+      "male": 154631,
+      "female": 137466
+    },
+    {
+      "regionCode": "33003",
+      "region": "동부",
+      "year": 2025,
+      "singleHouseholds": 162405,
+      "youngSingleHouseholds": 32644,
+      "male": 83395,
+      "female": 79010
+    },
+    {
+      "regionCode": "33004",
+      "region": "읍부",
+      "year": 2025,
+      "singleHouseholds": 63902,
+      "youngSingleHouseholds": 8992,
+      "male": 35594,
+      "female": 28308
+    },
+    {
+      "regionCode": "33005",
+      "region": "면부",
+      "year": 2025,
+      "singleHouseholds": 65790,
+      "youngSingleHouseholds": 6367,
+      "male": 35642,
+      "female": 30148
+    },
+    {
+      "regionCode": "33020",
+      "region": "충주시",
+      "year": 2025,
+      "singleHouseholds": 40305,
+      "youngSingleHouseholds": 8065,
+      "male": 21212,
+      "female": 19093
+    },
+    {
+      "regionCode": "33030",
+      "region": "제천시",
+      "year": 2025,
+      "singleHouseholds": 23435,
+      "youngSingleHouseholds": 3074,
+      "male": 11640,
+      "female": 11795
+    },
+    {
+      "regionCode": "33040",
+      "region": "청주시",
+      "year": 2025,
+      "singleHouseholds": 151552,
+      "youngSingleHouseholds": 30676,
+      "male": 80570,
+      "female": 70982
+    },
+    {
+      "regionCode": "33041",
+      "region": "상당구",
+      "year": 2025,
+      "singleHouseholds": 27280,
+      "youngSingleHouseholds": 2675,
+      "male": 13342,
+      "female": 13938
+    },
+    {
+      "regionCode": "33042",
+      "region": "서원구",
+      "year": 2025,
+      "singleHouseholds": 35906,
+      "youngSingleHouseholds": 8986,
+      "male": 18131,
+      "female": 17775
+    },
+    {
+      "regionCode": "33043",
+      "region": "흥덕구",
+      "year": 2025,
+      "singleHouseholds": 53867,
+      "youngSingleHouseholds": 11348,
+      "male": 29514,
+      "female": 24353
+    },
+    {
+      "regionCode": "33044",
+      "region": "청원구",
+      "year": 2025,
+      "singleHouseholds": 34499,
+      "youngSingleHouseholds": 7667,
+      "male": 19583,
+      "female": 14916
+    },
+    {
+      "regionCode": "33520",
+      "region": "보은군",
+      "year": 2025,
+      "singleHouseholds": 5500,
+      "youngSingleHouseholds": 188,
+      "male": 2506,
+      "female": 2994
+    },
+    {
+      "regionCode": "33530",
+      "region": "옥천군",
+      "year": 2025,
+      "singleHouseholds": 7998,
+      "youngSingleHouseholds": 290,
+      "male": 3747,
+      "female": 4251
+    },
+    {
+      "regionCode": "33540",
+      "region": "영동군",
+      "year": 2025,
+      "singleHouseholds": 8959,
+      "youngSingleHouseholds": 600,
+      "male": 4216,
+      "female": 4743
+    },
+    {
+      "regionCode": "33550",
+      "region": "진천군",
+      "year": 2025,
+      "singleHouseholds": 14812,
+      "youngSingleHouseholds": 1477,
+      "male": 8752,
+      "female": 6060
+    },
+    {
+      "regionCode": "33560",
+      "region": "괴산군",
+      "year": 2025,
+      "singleHouseholds": 7928,
+      "youngSingleHouseholds": 528,
+      "male": 4143,
+      "female": 3785
+    },
+    {
+      "regionCode": "33570",
+      "region": "음성군",
+      "year": 2025,
+      "singleHouseholds": 18959,
+      "youngSingleHouseholds": 2016,
+      "male": 10944,
+      "female": 8015
+    },
+    {
+      "regionCode": "33580",
+      "region": "단양군",
+      "year": 2025,
+      "singleHouseholds": 5429,
+      "youngSingleHouseholds": 186,
+      "male": 2723,
+      "female": 2706
+    },
+    {
+      "regionCode": "33590",
+      "region": "증평군",
+      "year": 2025,
+      "singleHouseholds": 7220,
+      "youngSingleHouseholds": 903,
+      "male": 4178,
+      "female": 3042
+    },
+    {
+      "regionCode": "34",
+      "region": "충청남도",
+      "year": 2025,
+      "singleHouseholds": 376814,
+      "youngSingleHouseholds": 57691,
+      "male": 203082,
+      "female": 173732
+    },
+    {
+      "regionCode": "34003",
+      "region": "동부",
+      "year": 2025,
+      "singleHouseholds": 170914,
+      "youngSingleHouseholds": 36334,
+      "male": 92665,
+      "female": 78249
+    },
+    {
+      "regionCode": "34004",
+      "region": "읍부",
+      "year": 2025,
+      "singleHouseholds": 89763,
+      "youngSingleHouseholds": 11435,
+      "male": 48645,
+      "female": 41118
+    },
+    {
+      "regionCode": "34005",
+      "region": "면부",
+      "year": 2025,
+      "singleHouseholds": 116137,
+      "youngSingleHouseholds": 9922,
+      "male": 61772,
+      "female": 54365
+    },
+    {
+      "regionCode": "34010",
+      "region": "천안시",
+      "year": 2025,
+      "singleHouseholds": 118303,
+      "youngSingleHouseholds": 27304,
+      "male": 65540,
+      "female": 52763
+    },
+    {
+      "regionCode": "34011",
+      "region": "동남구",
+      "year": 2025,
+      "singleHouseholds": 47457,
+      "youngSingleHouseholds": 11023,
+      "male": 24602,
+      "female": 22855
+    },
+    {
+      "regionCode": "34012",
+      "region": "서북구",
+      "year": 2025,
+      "singleHouseholds": 70846,
+      "youngSingleHouseholds": 16281,
+      "male": 40938,
+      "female": 29908
+    },
+    {
+      "regionCode": "34020",
+      "region": "공주시",
+      "year": 2025,
+      "singleHouseholds": 19378,
+      "youngSingleHouseholds": 3501,
+      "male": 9229,
+      "female": 10149
+    },
+    {
+      "regionCode": "34030",
+      "region": "보령시",
+      "year": 2025,
+      "singleHouseholds": 16766,
+      "youngSingleHouseholds": 1249,
+      "male": 8284,
+      "female": 8482
+    },
+    {
+      "regionCode": "34040",
+      "region": "아산시",
+      "year": 2025,
+      "singleHouseholds": 58941,
+      "youngSingleHouseholds": 10356,
+      "male": 34642,
+      "female": 24299
+    },
+    {
+      "regionCode": "34050",
+      "region": "서산시",
+      "year": 2025,
+      "singleHouseholds": 28700,
+      "youngSingleHouseholds": 3898,
+      "male": 16544,
+      "female": 12156
+    },
+    {
+      "regionCode": "34060",
+      "region": "논산시",
+      "year": 2025,
+      "singleHouseholds": 19738,
+      "youngSingleHouseholds": 2016,
+      "male": 9492,
+      "female": 10246
+    },
+    {
+      "regionCode": "34070",
+      "region": "계룡시",
+      "year": 2025,
+      "singleHouseholds": 5491,
+      "youngSingleHouseholds": 544,
+      "male": 2669,
+      "female": 2822
+    },
+    {
+      "regionCode": "34080",
+      "region": "당진시",
+      "year": 2025,
+      "singleHouseholds": 31313,
+      "youngSingleHouseholds": 2902,
+      "male": 19783,
+      "female": 11530
+    },
+    {
+      "regionCode": "34510",
+      "region": "금산군",
+      "year": 2025,
+      "singleHouseholds": 9359,
+      "youngSingleHouseholds": 868,
+      "male": 4315,
+      "female": 5044
+    },
+    {
+      "regionCode": "34530",
+      "region": "부여군",
+      "year": 2025,
+      "singleHouseholds": 10498,
+      "youngSingleHouseholds": 356,
+      "male": 4520,
+      "female": 5978
+    },
+    {
+      "regionCode": "34540",
+      "region": "서천군",
+      "year": 2025,
+      "singleHouseholds": 8949,
+      "youngSingleHouseholds": 311,
+      "male": 3982,
+      "female": 4967
+    },
+    {
+      "regionCode": "34550",
+      "region": "청양군",
+      "year": 2025,
+      "singleHouseholds": 5379,
+      "youngSingleHouseholds": 215,
+      "male": 2588,
+      "female": 2791
+    },
+    {
+      "regionCode": "34560",
+      "region": "홍성군",
+      "year": 2025,
+      "singleHouseholds": 18107,
+      "youngSingleHouseholds": 2167,
+      "male": 8749,
+      "female": 9358
+    },
+    {
+      "regionCode": "34570",
+      "region": "예산군",
+      "year": 2025,
+      "singleHouseholds": 14024,
+      "youngSingleHouseholds": 1010,
+      "male": 6765,
+      "female": 7259
+    },
+    {
+      "regionCode": "34580",
+      "region": "태안군",
+      "year": 2025,
+      "singleHouseholds": 11868,
+      "youngSingleHouseholds": 994,
+      "male": 5980,
+      "female": 5888
+    },
+    {
+      "regionCode": "35",
+      "region": "전북특별자치도",
+      "year": 2025,
+      "singleHouseholds": 308176,
+      "youngSingleHouseholds": 43302,
+      "male": 149545,
+      "female": 158631
+    },
+    {
+      "regionCode": "35003",
+      "region": "동부",
+      "year": 2025,
+      "singleHouseholds": 215134,
+      "youngSingleHouseholds": 37960,
+      "male": 106211,
+      "female": 108923
+    },
+    {
+      "regionCode": "35004",
+      "region": "읍부",
+      "year": 2025,
+      "singleHouseholds": 26389,
+      "youngSingleHouseholds": 3080,
+      "male": 13029,
+      "female": 13360
+    },
+    {
+      "regionCode": "35005",
+      "region": "면부",
+      "year": 2025,
+      "singleHouseholds": 66653,
+      "youngSingleHouseholds": 2262,
+      "male": 30305,
+      "female": 36348
+    },
+    {
+      "regionCode": "35010",
+      "region": "전주시",
+      "year": 2025,
+      "singleHouseholds": 108812,
+      "youngSingleHouseholds": 21781,
+      "male": 52857,
+      "female": 55955
+    },
+    {
+      "regionCode": "35011",
+      "region": "완산구",
+      "year": 2025,
+      "singleHouseholds": 56611,
+      "youngSingleHouseholds": 9953,
+      "male": 26289,
+      "female": 30322
+    },
+    {
+      "regionCode": "35012",
+      "region": "덕진구",
+      "year": 2025,
+      "singleHouseholds": 52201,
+      "youngSingleHouseholds": 11828,
+      "male": 26568,
+      "female": 25633
+    },
+    {
+      "regionCode": "35020",
+      "region": "군산시",
+      "year": 2025,
+      "singleHouseholds": 46152,
+      "youngSingleHouseholds": 6067,
+      "male": 24039,
+      "female": 22113
+    },
+    {
+      "regionCode": "35030",
+      "region": "익산시",
+      "year": 2025,
+      "singleHouseholds": 48251,
+      "youngSingleHouseholds": 8797,
+      "male": 23537,
+      "female": 24714
+    },
+    {
+      "regionCode": "35040",
+      "region": "정읍시",
+      "year": 2025,
+      "singleHouseholds": 18839,
+      "youngSingleHouseholds": 1094,
+      "male": 8745,
+      "female": 10094
+    },
+    {
+      "regionCode": "35050",
+      "region": "남원시",
+      "year": 2025,
+      "singleHouseholds": 13752,
+      "youngSingleHouseholds": 733,
+      "male": 6011,
+      "female": 7741
+    },
+    {
+      "regionCode": "35060",
+      "region": "김제시",
+      "year": 2025,
+      "singleHouseholds": 14515,
+      "youngSingleHouseholds": 622,
+      "male": 6699,
+      "female": 7816
+    },
+    {
+      "regionCode": "35510",
+      "region": "완주군",
+      "year": 2025,
+      "singleHouseholds": 17410,
+      "youngSingleHouseholds": 2487,
+      "male": 9421,
+      "female": 7989
+    },
+    {
+      "regionCode": "35520",
+      "region": "진안군",
+      "year": 2025,
+      "singleHouseholds": 4341,
+      "youngSingleHouseholds": 141,
+      "male": 2127,
+      "female": 2214
+    },
+    {
+      "regionCode": "35530",
+      "region": "무주군",
+      "year": 2025,
+      "singleHouseholds": 4345,
+      "youngSingleHouseholds": 148,
+      "male": 2035,
+      "female": 2310
+    },
+    {
+      "regionCode": "35540",
+      "region": "장수군",
+      "year": 2025,
+      "singleHouseholds": 3713,
+      "youngSingleHouseholds": 127,
+      "male": 1673,
+      "female": 2040
+    },
+    {
+      "regionCode": "35550",
+      "region": "임실군",
+      "year": 2025,
+      "singleHouseholds": 4812,
+      "youngSingleHouseholds": 466,
+      "male": 2148,
+      "female": 2664
+    },
+    {
+      "regionCode": "35560",
+      "region": "순창군",
+      "year": 2025,
+      "singleHouseholds": 4549,
+      "youngSingleHouseholds": 166,
+      "male": 1961,
+      "female": 2588
+    },
+    {
+      "regionCode": "35570",
+      "region": "고창군",
+      "year": 2025,
+      "singleHouseholds": 9835,
+      "youngSingleHouseholds": 354,
+      "male": 4321,
+      "female": 5514
+    },
+    {
+      "regionCode": "35580",
+      "region": "부안군",
+      "year": 2025,
+      "singleHouseholds": 8850,
+      "youngSingleHouseholds": 319,
+      "male": 3971,
+      "female": 4879
+    },
+    {
+      "regionCode": "36",
+      "region": "전라남도",
+      "year": 2025,
+      "singleHouseholds": 306726,
+      "youngSingleHouseholds": 27231,
+      "male": 150534,
+      "female": 156192
+    },
+    {
+      "regionCode": "36003",
+      "region": "동부",
+      "year": 2025,
+      "singleHouseholds": 124304,
+      "youngSingleHouseholds": 16219,
+      "male": 64515,
+      "female": 59789
+    },
+    {
+      "regionCode": "36004",
+      "region": "읍부",
+      "year": 2025,
+      "singleHouseholds": 71935,
+      "youngSingleHouseholds": 6383,
+      "male": 35045,
+      "female": 36890
+    },
+    {
+      "regionCode": "36005",
+      "region": "면부",
+      "year": 2025,
+      "singleHouseholds": 110487,
+      "youngSingleHouseholds": 4629,
+      "male": 50974,
+      "female": 59513
+    },
+    {
+      "regionCode": "36010",
+      "region": "목포시",
+      "year": 2025,
+      "singleHouseholds": 39107,
+      "youngSingleHouseholds": 4241,
+      "male": 19343,
+      "female": 19764
+    },
+    {
+      "regionCode": "36020",
+      "region": "여수시",
+      "year": 2025,
+      "singleHouseholds": 40876,
+      "youngSingleHouseholds": 4494,
+      "male": 21215,
+      "female": 19661
+    },
+    {
+      "regionCode": "36030",
+      "region": "순천시",
+      "year": 2025,
+      "singleHouseholds": 40032,
+      "youngSingleHouseholds": 5280,
+      "male": 19478,
+      "female": 20554
+    },
+    {
+      "regionCode": "36040",
+      "region": "나주시",
+      "year": 2025,
+      "singleHouseholds": 21365,
+      "youngSingleHouseholds": 2460,
+      "male": 10552,
+      "female": 10813
+    },
+    {
+      "regionCode": "36060",
+      "region": "광양시",
+      "year": 2025,
+      "singleHouseholds": 22152,
+      "youngSingleHouseholds": 2050,
+      "male": 13277,
+      "female": 8875
+    },
+    {
+      "regionCode": "36510",
+      "region": "담양군",
+      "year": 2025,
+      "singleHouseholds": 7072,
+      "youngSingleHouseholds": 291,
+      "male": 3265,
+      "female": 3807
+    },
+    {
+      "regionCode": "36520",
+      "region": "곡성군",
+      "year": 2025,
+      "singleHouseholds": 6016,
+      "youngSingleHouseholds": 452,
+      "male": 2832,
+      "female": 3184
+    },
+    {
+      "regionCode": "36530",
+      "region": "구례군",
+      "year": 2025,
+      "singleHouseholds": 4673,
+      "youngSingleHouseholds": 116,
+      "male": 2063,
+      "female": 2610
+    },
+    {
+      "regionCode": "36550",
+      "region": "고흥군",
+      "year": 2025,
+      "singleHouseholds": 13489,
+      "youngSingleHouseholds": 362,
+      "male": 5865,
+      "female": 7624
+    },
+    {
+      "regionCode": "36560",
+      "region": "보성군",
+      "year": 2025,
+      "singleHouseholds": 7754,
+      "youngSingleHouseholds": 185,
+      "male": 3253,
+      "female": 4501
+    },
+    {
+      "regionCode": "36570",
+      "region": "화순군",
+      "year": 2025,
+      "singleHouseholds": 10201,
+      "youngSingleHouseholds": 524,
+      "male": 4432,
+      "female": 5769
+    },
+    {
+      "regionCode": "36580",
+      "region": "장흥군",
+      "year": 2025,
+      "singleHouseholds": 7062,
+      "youngSingleHouseholds": 325,
+      "male": 2988,
+      "female": 4074
+    },
+    {
+      "regionCode": "36590",
+      "region": "강진군",
+      "year": 2025,
+      "singleHouseholds": 6481,
+      "youngSingleHouseholds": 272,
+      "male": 2789,
+      "female": 3692
+    },
+    {
+      "regionCode": "36600",
+      "region": "해남군",
+      "year": 2025,
+      "singleHouseholds": 11735,
+      "youngSingleHouseholds": 478,
+      "male": 5317,
+      "female": 6418
+    },
+    {
+      "regionCode": "36610",
+      "region": "영암군",
+      "year": 2025,
+      "singleHouseholds": 10538,
+      "youngSingleHouseholds": 790,
+      "male": 5638,
+      "female": 4900
+    },
+    {
+      "regionCode": "36620",
+      "region": "무안군",
+      "year": 2025,
+      "singleHouseholds": 15243,
+      "youngSingleHouseholds": 2933,
+      "male": 7681,
+      "female": 7562
+    },
+    {
+      "regionCode": "36630",
+      "region": "함평군",
+      "year": 2025,
+      "singleHouseholds": 5680,
+      "youngSingleHouseholds": 140,
+      "male": 2549,
+      "female": 3131
+    },
+    {
+      "regionCode": "36640",
+      "region": "영광군",
+      "year": 2025,
+      "singleHouseholds": 9187,
+      "youngSingleHouseholds": 589,
+      "male": 4421,
+      "female": 4766
+    },
+    {
+      "regionCode": "36650",
+      "region": "장성군",
+      "year": 2025,
+      "singleHouseholds": 6644,
+      "youngSingleHouseholds": 474,
+      "male": 3225,
+      "female": 3419
+    },
+    {
+      "regionCode": "36660",
+      "region": "완도군",
+      "year": 2025,
+      "singleHouseholds": 8523,
+      "youngSingleHouseholds": 311,
+      "male": 3917,
+      "female": 4606
+    },
+    {
+      "regionCode": "36670",
+      "region": "진도군",
+      "year": 2025,
+      "singleHouseholds": 5809,
+      "youngSingleHouseholds": 235,
+      "male": 2655,
+      "female": 3154
+    },
+    {
+      "regionCode": "36680",
+      "region": "신안군",
+      "year": 2025,
+      "singleHouseholds": 7087,
+      "youngSingleHouseholds": 229,
+      "male": 3779,
+      "female": 3308
+    },
+    {
+      "regionCode": "37",
+      "region": "경상북도",
+      "year": 2025,
+      "singleHouseholds": 466174,
+      "youngSingleHouseholds": 61065,
+      "male": 235081,
+      "female": 231093
+    },
+    {
+      "regionCode": "37003",
+      "region": "동부",
+      "year": 2025,
+      "singleHouseholds": 235369,
+      "youngSingleHouseholds": 40931,
+      "male": 119918,
+      "female": 115451
+    },
+    {
+      "regionCode": "37004",
+      "region": "읍부",
+      "year": 2025,
+      "singleHouseholds": 115486,
+      "youngSingleHouseholds": 15933,
+      "male": 60982,
+      "female": 54504
+    },
+    {
+      "regionCode": "37005",
+      "region": "면부",
+      "year": 2025,
+      "singleHouseholds": 115319,
+      "youngSingleHouseholds": 4201,
+      "male": 54181,
+      "female": 61138
+    },
+    {
+      "regionCode": "37010",
+      "region": "포항시",
+      "year": 2025,
+      "singleHouseholds": 79273,
+      "youngSingleHouseholds": 9395,
+      "male": 40652,
+      "female": 38621
+    },
+    {
+      "regionCode": "37011",
+      "region": "남구",
+      "year": 2025,
+      "singleHouseholds": 38509,
+      "youngSingleHouseholds": 4959,
+      "male": 21356,
+      "female": 17153
+    },
+    {
+      "regionCode": "37012",
+      "region": "북구",
+      "year": 2025,
+      "singleHouseholds": 40764,
+      "youngSingleHouseholds": 4436,
+      "male": 19296,
+      "female": 21468
+    },
+    {
+      "regionCode": "37020",
+      "region": "경주시",
+      "year": 2025,
+      "singleHouseholds": 46606,
+      "youngSingleHouseholds": 6272,
+      "male": 22797,
+      "female": 23809
+    },
+    {
+      "regionCode": "37030",
+      "region": "김천시",
+      "year": 2025,
+      "singleHouseholds": 23572,
+      "youngSingleHouseholds": 2595,
+      "male": 11304,
+      "female": 12268
+    },
+    {
+      "regionCode": "37040",
+      "region": "안동시",
+      "year": 2025,
+      "singleHouseholds": 30674,
+      "youngSingleHouseholds": 4835,
+      "male": 14489,
+      "female": 16185
+    },
+    {
+      "regionCode": "37050",
+      "region": "구미시",
+      "year": 2025,
+      "singleHouseholds": 69162,
+      "youngSingleHouseholds": 12459,
+      "male": 39417,
+      "female": 29745
+    },
+    {
+      "regionCode": "37060",
+      "region": "영주시",
+      "year": 2025,
+      "singleHouseholds": 17933,
+      "youngSingleHouseholds": 2087,
+      "male": 8404,
+      "female": 9529
+    },
+    {
+      "regionCode": "37070",
+      "region": "영천시",
+      "year": 2025,
+      "singleHouseholds": 18932,
+      "youngSingleHouseholds": 861,
+      "male": 9566,
+      "female": 9366
+    },
+    {
+      "regionCode": "37080",
+      "region": "상주시",
+      "year": 2025,
+      "singleHouseholds": 17768,
+      "youngSingleHouseholds": 1730,
+      "male": 8060,
+      "female": 9708
+    },
+    {
+      "regionCode": "37090",
+      "region": "문경시",
+      "year": 2025,
+      "singleHouseholds": 12250,
+      "youngSingleHouseholds": 716,
+      "male": 5327,
+      "female": 6923
+    },
+    {
+      "regionCode": "37100",
+      "region": "경산시",
+      "year": 2025,
+      "singleHouseholds": 55411,
+      "youngSingleHouseholds": 15839,
+      "male": 28673,
+      "female": 26738
+    },
+    {
+      "regionCode": "37520",
+      "region": "의성군",
+      "year": 2025,
+      "singleHouseholds": 10803,
+      "youngSingleHouseholds": 319,
+      "male": 4844,
+      "female": 5959
+    },
+    {
+      "regionCode": "37530",
+      "region": "청송군",
+      "year": 2025,
+      "singleHouseholds": 5382,
+      "youngSingleHouseholds": 271,
+      "male": 2558,
+      "female": 2824
+    },
+    {
+      "regionCode": "37540",
+      "region": "영양군",
+      "year": 2025,
+      "singleHouseholds": 3411,
+      "youngSingleHouseholds": 146,
+      "male": 1543,
+      "female": 1868
+    },
+    {
+      "regionCode": "37550",
+      "region": "영덕군",
+      "year": 2025,
+      "singleHouseholds": 7730,
+      "youngSingleHouseholds": 234,
+      "male": 3119,
+      "female": 4611
+    },
+    {
+      "regionCode": "37560",
+      "region": "청도군",
+      "year": 2025,
+      "singleHouseholds": 7900,
+      "youngSingleHouseholds": 179,
+      "male": 3438,
+      "female": 4462
+    },
+    {
+      "regionCode": "37570",
+      "region": "고령군",
+      "year": 2025,
+      "singleHouseholds": 5612,
+      "youngSingleHouseholds": 167,
+      "male": 2716,
+      "female": 2896
+    },
+    {
+      "regionCode": "37580",
+      "region": "성주군",
+      "year": 2025,
+      "singleHouseholds": 7447,
+      "youngSingleHouseholds": 203,
+      "male": 3907,
+      "female": 3540
+    },
+    {
+      "regionCode": "37590",
+      "region": "칠곡군",
+      "year": 2025,
+      "singleHouseholds": 19198,
+      "youngSingleHouseholds": 1135,
+      "male": 10982,
+      "female": 8216
+    },
+    {
+      "regionCode": "37600",
+      "region": "예천군",
+      "year": 2025,
+      "singleHouseholds": 9499,
+      "youngSingleHouseholds": 559,
+      "male": 4312,
+      "female": 5187
+    },
+    {
+      "regionCode": "37610",
+      "region": "봉화군",
+      "year": 2025,
+      "singleHouseholds": 5847,
+      "youngSingleHouseholds": 145,
+      "male": 2829,
+      "female": 3018
+    },
+    {
+      "regionCode": "37620",
+      "region": "울진군",
+      "year": 2025,
+      "singleHouseholds": 9723,
+      "youngSingleHouseholds": 766,
+      "male": 4846,
+      "female": 4877
+    },
+    {
+      "regionCode": "37630",
+      "region": "울릉군",
+      "year": 2025,
+      "singleHouseholds": 2041,
+      "youngSingleHouseholds": 152,
+      "male": 1298,
+      "female": 743
+    },
+    {
+      "regionCode": "38",
+      "region": "경상남도",
+      "year": 2025,
+      "singleHouseholds": 515676,
+      "youngSingleHouseholds": 52047,
+      "male": 260940,
+      "female": 254736
+    },
+    {
+      "regionCode": "38003",
+      "region": "동부",
+      "year": 2025,
+      "singleHouseholds": 322488,
+      "youngSingleHouseholds": 41667,
+      "male": 167166,
+      "female": 155322
+    },
+    {
+      "regionCode": "38004",
+      "region": "읍부",
+      "year": 2025,
+      "singleHouseholds": 68577,
+      "youngSingleHouseholds": 6051,
+      "male": 33426,
+      "female": 35151
+    },
+    {
+      "regionCode": "38005",
+      "region": "면부",
+      "year": 2025,
+      "singleHouseholds": 124611,
+      "youngSingleHouseholds": 4329,
+      "male": 60348,
+      "female": 64263
+    },
+    {
+      "regionCode": "38030",
+      "region": "진주시",
+      "year": 2025,
+      "singleHouseholds": 58952,
+      "youngSingleHouseholds": 12126,
+      "male": 28431,
+      "female": 30521
+    },
+    {
+      "regionCode": "38050",
+      "region": "통영시",
+      "year": 2025,
+      "singleHouseholds": 20788,
+      "youngSingleHouseholds": 1263,
+      "male": 10242,
+      "female": 10546
+    },
+    {
+      "regionCode": "38060",
+      "region": "사천시",
+      "year": 2025,
+      "singleHouseholds": 19953,
+      "youngSingleHouseholds": 1682,
+      "male": 10145,
+      "female": 9808
+    },
+    {
+      "regionCode": "38070",
+      "region": "김해시",
+      "year": 2025,
+      "singleHouseholds": 71569,
+      "youngSingleHouseholds": 7346,
+      "male": 37837,
+      "female": 33732
+    },
+    {
+      "regionCode": "38080",
+      "region": "밀양시",
+      "year": 2025,
+      "singleHouseholds": 19485,
+      "youngSingleHouseholds": 1066,
+      "male": 8896,
+      "female": 10589
+    },
+    {
+      "regionCode": "38090",
+      "region": "거제시",
+      "year": 2025,
+      "singleHouseholds": 34002,
+      "youngSingleHouseholds": 2498,
+      "male": 20412,
+      "female": 13590
+    },
+    {
+      "regionCode": "38100",
+      "region": "양산시",
+      "year": 2025,
+      "singleHouseholds": 52224,
+      "youngSingleHouseholds": 4886,
+      "male": 26380,
+      "female": 25844
+    },
+    {
+      "regionCode": "38110",
+      "region": "창원시",
+      "year": 2025,
+      "singleHouseholds": 152260,
+      "youngSingleHouseholds": 18412,
+      "male": 79304,
+      "female": 72956
+    },
+    {
+      "regionCode": "38111",
+      "region": "의창구",
+      "year": 2025,
+      "singleHouseholds": 32119,
+      "youngSingleHouseholds": 4212,
+      "male": 17268,
+      "female": 14851
+    },
+    {
+      "regionCode": "38112",
+      "region": "성산구",
+      "year": 2025,
+      "singleHouseholds": 33481,
+      "youngSingleHouseholds": 5432,
+      "male": 18109,
+      "female": 15372
+    },
+    {
+      "regionCode": "38113",
+      "region": "마산합포구",
+      "year": 2025,
+      "singleHouseholds": 30957,
+      "youngSingleHouseholds": 3702,
+      "male": 14914,
+      "female": 16043
+    },
+    {
+      "regionCode": "38114",
+      "region": "마산회원구",
+      "year": 2025,
+      "singleHouseholds": 26982,
+      "youngSingleHouseholds": 2043,
+      "male": 12848,
+      "female": 14134
+    },
+    {
+      "regionCode": "38115",
+      "region": "진해구",
+      "year": 2025,
+      "singleHouseholds": 28721,
+      "youngSingleHouseholds": 3023,
+      "male": 16165,
+      "female": 12556
+    },
+    {
+      "regionCode": "38510",
+      "region": "의령군",
+      "year": 2025,
+      "singleHouseholds": 5683,
+      "youngSingleHouseholds": 145,
+      "male": 2529,
+      "female": 3154
+    },
+    {
+      "regionCode": "38520",
+      "region": "함안군",
+      "year": 2025,
+      "singleHouseholds": 10023,
+      "youngSingleHouseholds": 330,
+      "male": 5130,
+      "female": 4893
+    },
+    {
+      "regionCode": "38530",
+      "region": "창녕군",
+      "year": 2025,
+      "singleHouseholds": 11182,
+      "youngSingleHouseholds": 295,
+      "male": 5194,
+      "female": 5988
+    },
+    {
+      "regionCode": "38540",
+      "region": "고성군",
+      "year": 2025,
+      "singleHouseholds": 8924,
+      "youngSingleHouseholds": 259,
+      "male": 4112,
+      "female": 4812
+    },
+    {
+      "regionCode": "38550",
+      "region": "남해군",
+      "year": 2025,
+      "singleHouseholds": 8113,
+      "youngSingleHouseholds": 280,
+      "male": 3362,
+      "female": 4751
+    },
+    {
+      "regionCode": "38560",
+      "region": "하동군",
+      "year": 2025,
+      "singleHouseholds": 8079,
+      "youngSingleHouseholds": 218,
+      "male": 3780,
+      "female": 4299
+    },
+    {
+      "regionCode": "38570",
+      "region": "산청군",
+      "year": 2025,
+      "singleHouseholds": 6959,
+      "youngSingleHouseholds": 143,
+      "male": 3211,
+      "female": 3748
+    },
+    {
+      "regionCode": "38580",
+      "region": "함양군",
+      "year": 2025,
+      "singleHouseholds": 7289,
+      "youngSingleHouseholds": 227,
+      "male": 3188,
+      "female": 4101
+    },
+    {
+      "regionCode": "38590",
+      "region": "거창군",
+      "year": 2025,
+      "singleHouseholds": 11110,
+      "youngSingleHouseholds": 671,
+      "male": 4832,
+      "female": 6278
+    },
+    {
+      "regionCode": "38600",
+      "region": "합천군",
+      "year": 2025,
+      "singleHouseholds": 9081,
+      "youngSingleHouseholds": 200,
+      "male": 3955,
+      "female": 5126
+    },
+    {
+      "regionCode": "39",
+      "region": "제주특별자치도",
+      "year": 2025,
+      "singleHouseholds": 96391,
+      "youngSingleHouseholds": 10828,
+      "male": 48279,
+      "female": 48112
+    },
+    {
+      "regionCode": "39003",
+      "region": "동부",
+      "year": 2025,
+      "singleHouseholds": 69173,
+      "youngSingleHouseholds": 9426,
+      "male": 34587,
+      "female": 34586
+    },
+    {
+      "regionCode": "39004",
+      "region": "읍부",
+      "year": 2025,
+      "singleHouseholds": 21273,
+      "youngSingleHouseholds": 992,
+      "male": 10667,
+      "female": 10606
+    },
+    {
+      "regionCode": "39005",
+      "region": "면부",
+      "year": 2025,
+      "singleHouseholds": 5945,
+      "youngSingleHouseholds": 410,
+      "male": 3025,
+      "female": 2920
+    },
+    {
+      "regionCode": "39010",
+      "region": "제주시",
+      "year": 2025,
+      "singleHouseholds": 69548,
+      "youngSingleHouseholds": 8822,
+      "male": 35019,
+      "female": 34529
+    },
+    {
+      "regionCode": "39020",
+      "region": "서귀포시",
+      "year": 2025,
+      "singleHouseholds": 26843,
+      "youngSingleHouseholds": 2006,
+      "male": 13260,
+      "female": 13583
+    }
+  ]
+}

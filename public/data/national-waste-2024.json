@@ -1,0 +1,27 @@
+{
+  "source": "https://www.data.go.kr/data/3070174/fileData.do",
+  "provider": "한국환경공단 · 자원순환정보시스템",
+  "dataset": "2024년 전국 폐기물 발생 및 처리현황",
+  "year": 2024,
+  "scope": "전국·시도·연간",
+  "unit": "만톤/년",
+  "rows": [
+    { "sido": "서울특별시", "total": 1410, "household": 289, "business": 94, "businessFacility": 104, "construction": 910, "designated": 12 },
+    { "sido": "부산광역시", "total": 689, "household": 91, "business": 60, "businessFacility": 146, "construction": 370, "designated": 22 },
+    { "sido": "대구광역시", "total": 371, "household": 76, "business": 19, "businessFacility": 98, "construction": 162, "designated": 16 },
+    { "sido": "인천광역시", "total": 1118, "household": 86, "business": 58, "businessFacility": 462, "construction": 482, "designated": 31 },
+    { "sido": "광주광역시", "total": 222, "household": 47, "business": 8, "businessFacility": 48, "construction": 113, "designated": 6 },
+    { "sido": "대전광역시", "total": 315, "household": 49, "business": 5, "businessFacility": 76, "construction": 179, "designated": 6 },
+    { "sido": "울산광역시", "total": 717, "household": 35, "business": 7, "businessFacility": 401, "construction": 209, "designated": 65 },
+    { "sido": "세종특별자치시", "total": 92, "household": 11, "business": 2, "businessFacility": 42, "construction": 30, "designated": 7 },
+    { "sido": "경기도", "total": 3777, "household": 434, "business": 218, "businessFacility": 1273, "construction": 1698, "designated": 154 },
+    { "sido": "강원특별자치도", "total": 596, "household": 62, "business": 16, "businessFacility": 248, "construction": 262, "designated": 8 },
+    { "sido": "충청북도", "total": 725, "household": 62, "business": 23, "businessFacility": 286, "construction": 297, "designated": 56 },
+    { "sido": "충청남도", "total": 1981, "household": 81, "business": 33, "businessFacility": 1431, "construction": 376, "designated": 59 },
+    { "sido": "전북특별자치도", "total": 709, "household": 62, "business": 15, "businessFacility": 326, "construction": 273, "designated": 34 },
+    { "sido": "전라남도", "total": 2058, "household": 69, "business": 24, "businessFacility": 1653, "construction": 272, "designated": 40 },
+    { "sido": "경상북도", "total": 1855, "household": 94, "business": 33, "businessFacility": 1224, "construction": 415, "designated": 88 },
+    { "sido": "경상남도", "total": 1168, "household": 113, "business": 49, "businessFacility": 531, "construction": 431, "designated": 43 },
+    { "sido": "제주특별자치도", "total": 151, "household": 44, "business": 7, "businessFacility": 25, "construction": 74, "designated": 2 }
+  ]
+}
