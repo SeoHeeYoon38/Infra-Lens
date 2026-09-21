@@ -11,6 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
+infra-lens-site.zip
+infra-lens-site.tar.gz
 
 # Editor directories and files
 .vscode/*
