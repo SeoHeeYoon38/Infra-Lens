@@ -2741,6 +2741,16 @@ body::-webkit-scrollbar {
   color: #d7901b;
 }
 
+.dashboard-home .dashboard-intro h1 {
+  line-height: 1.26;
+}
+
+@media (max-width: 760px) {
+  .dashboard-home .dashboard-intro h1 {
+    line-height: 1.22;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .dashboard-home > section:not(.map-dashboard-grid),
   .analysis-main > section,
