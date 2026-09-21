@@ -5,7 +5,10 @@ export default function useInfraData() {
 
   useEffect(() => {
     fetch('/api/summary')
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) throw new Error(`summary_${response.status}`)
+        return response.json()
+      })
       .then(setData)
       .catch(() => setData({ regions: [], sidos: [] }))
   }, [])

@@ -15,6 +15,7 @@ export default function AnalysisPage() {
   const [params, setParams] = useSearchParams()
   const [report, setReport] = useState(null)
   const [reportLoading, setReportLoading] = useState(false)
+  const [printPending, setPrintPending] = useState(false)
   const sido = params.get('sido') || '서울특별시'
   const regions = useMemo(() => data?.regions?.filter((region) => region.sido === sido) ?? [], [data, sido])
   const district = params.get('district') || regions[0]?.district
@@ -24,8 +25,13 @@ export default function AnalysisPage() {
   const priority = risk >= 65 ? '1순위' : risk >= 50 ? '2순위' : '관찰'
 
   useEffect(() => {
-    if (report) requestAnimationFrame(() => document.getElementById('policy-report-result')?.scrollIntoView({ behavior: 'smooth', block: 'center' }))
-  }, [report])
+    if (!report || !printPending) return undefined
+    const timer = window.setTimeout(() => {
+      window.print()
+      setPrintPending(false)
+    }, 350)
+    return () => window.clearTimeout(timer)
+  }, [report, printPending])
 
   const selectSido = (nextSido) => {
     const nextDistrict = data?.sidos?.find((item) => item.name === nextSido)?.districts?.[0] ?? ''
@@ -41,6 +47,7 @@ export default function AnalysisPage() {
   const handleReport = async () => {
     if (!selectedRegion || reportLoading) return
     setReportLoading(true)
+    setPrintPending(true)
     try {
       const response = await fetch(`/api/report?sido=${encodeURIComponent(sido)}&district=${encodeURIComponent(selectedRegion.district)}`)
       if (!response.ok) throw new Error('report api unavailable')

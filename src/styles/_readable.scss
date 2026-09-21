@@ -922,30 +922,30 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 7px;
-  padding: 13px 22px 2px;
+  gap: 9px;
+  padding: 15px 22px 4px;
   color: $muted;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .map-legend-readable i {
   display: block;
-  width: 15px;
-  height: 9px;
-  border-radius: 2px;
+  width: 24px;
+  height: 12px;
+  border-radius: 3px;
 }
 
 .map-legend-readable b {
-  margin-right: 3px;
+  margin-right: 6px;
   color: $muted;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 600;
 }
 
 .legend-stable { background: #82b8ae; }
 .legend-watch { background: #d09b35; }
 .legend-critical { background: #d96a5e; }
-.legend-caption { margin-left: auto; color: $dim; font: 9px $mono; }
+.legend-caption { margin-left: auto; color: $dim; font: 10px $mono; }
 
 @media (max-width: 760px) {
   .regional-map-canvas.sido-level {
@@ -1340,20 +1340,38 @@
   fill-opacity: 1;
 }
 
+.policy-svg-label {
+  pointer-events: none;
+}
+
+.policy-svg-label .policy-region-label,
+.policy-svg-label .policy-region-value {
+  pointer-events: none;
+}
+
+.policy-svg-label.selected .policy-region-label {
+  font-size: 29px;
+  stroke-width: 7px;
+}
+
+.policy-svg-label.district-label.selected .policy-region-label {
+  font-size: 26px;
+}
+
 .policy-region-label {
   pointer-events: none;
   fill: #16343a;
-  font: 800 32px $sans;
+  font: 800 24px $sans;
   paint-order: stroke;
   stroke: rgba(255, 255, 255, .98);
-  stroke-width: 9px;
+  stroke-width: 6px;
   stroke-linejoin: round;
   stroke-opacity: .96;
   user-select: none;
 }
 
 .policy-region-label.district-label {
-  font-size: 29px;
+  font-size: 22px;
   letter-spacing: -.03em;
 }
 
@@ -1363,7 +1381,7 @@
 
 .policy-region-value {
   fill: #a64238;
-  font: 800 23px $mono;
+  font: 800 17px $mono;
 }
 
 .policy-region.selected .policy-region-label {
@@ -1483,9 +1501,10 @@
     padding: 25px 8px 8px;
   }
 
-  .policy-region-label { font-size: 25px; }
-  .policy-region-label.district-label { font-size: 22px; }
-  .policy-region.selected .policy-region-label { font-size: 30px; }
+  .policy-region-label { font-size: 20px; }
+  .policy-region-label.district-label { font-size: 18px; }
+  .policy-region-value { font-size: 14px; }
+  .policy-svg-label.selected .policy-region-label { font-size: 24px; }
   .policy-html-label { font-size: 14px; }
   .policy-html-label.district-label { font-size: 13px; }
   .policy-html-label.selected { font-size: 17px; }
@@ -1627,7 +1646,7 @@ body::-webkit-scrollbar {
 @media (min-width: 1281px) {
   .dashboard-home.dashboard-main { width: min(1780px, calc(100% - 72px)); }
   .dashboard-home .map-dashboard-grid { grid-template-columns: minmax(0, 1.7fr) minmax(330px, .7fr); }
-  .dashboard-home .policy-map-stage { min-height: clamp(620px, 66vh, 860px); }
+  .dashboard-home .policy-map-stage { min-height: 0; }
   .dashboard-home .dashboard-intro { align-items: flex-end; }
   .dashboard-home .intro-aside { flex: 0 0 260px; min-width: 0; }
   .dashboard-home .map-filter-bar { display: grid; grid-template-columns: minmax(240px, 1fr) minmax(190px, .7fr) minmax(190px, .7fr) auto; }
@@ -1636,8 +1655,106 @@ body::-webkit-scrollbar {
   .dashboard-home .detail-link { margin-left: 0; }
 }
 
+@media (min-width: 761px) {
+  .dashboard-home .map-filter-bar {
+    min-height: 82px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .dashboard-home .policy-map-stage {
+    min-height: 0;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1360px) {
+  .dashboard-home .dashboard-selection { padding: 12px; }
+  .dashboard-home .selection-header h2 { margin-top: 5px; font-size: 14px; }
+  .dashboard-home .selection-header strong { font-size: 22px; }
+  .dashboard-home .selection-score { margin: 11px 0 9px; padding: 9px 0; }
+  .dashboard-home .selection-score strong { margin-top: 6px; font-size: 34px; }
+  .dashboard-home .selection-score p { margin-top: 5px; font-size: 10px; }
+  .dashboard-home .selection-metrics { gap: 9px; }
+  .dashboard-home .selection-metrics span { font-size: 11px; }
+  .dashboard-home .selection-metrics strong { font-size: 12px; }
+  .dashboard-home .selection-note { margin: 10px 0; padding: 9px; }
+  .dashboard-home .selection-note p { font-size: 10px; line-height: 1.45; }
+  .dashboard-home .dashboard-selection .primary-action { min-height: 40px; }
+}
+
 @media (max-width: 760px) {
   .guide-modal { padding: 28px 24px 24px; }
   .guide-modal h2 { margin-top: 24px; font-size: 24px; }
   .guide-modal p { min-height: 0; font-size: 14px; }
+}
+
+// The report is deliberately printed as the page's conclusion: analysis,
+// evidence and the policy recommendation stay together in the PDF.
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  html,
+  body,
+  #root {
+    min-width: 0;
+    min-height: 0;
+    background: #fff !important;
+  }
+
+  body {
+    overflow: visible !important;
+  }
+
+  .app-header,
+  .app-footer,
+  .guide-backdrop,
+  .analysis-selects,
+  .insight-panel > .primary-action,
+  .action-stats > button {
+    display: none !important;
+  }
+
+  .app-shell,
+  .page-main.analysis-main {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    background: #fff !important;
+  }
+
+  .analysis-heading {
+    margin-bottom: 12px !important;
+  }
+
+  .panel {
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+
+  .analysis-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+    align-items: start;
+  }
+
+  .report-result {
+    display: block !important;
+    break-inside: avoid;
+  }
+
+  .action-panel {
+    margin-top: 12px !important;
+    break-inside: avoid;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
 }
