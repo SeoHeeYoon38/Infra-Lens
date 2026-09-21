@@ -1596,7 +1596,7 @@ body::-webkit-scrollbar {
 .guide-backdrop {
   position: fixed;
   inset: 0;
-  z-index: 20;
+  z-index: 220;
   display: grid;
   place-items: center;
   padding: 24px;
@@ -2016,8 +2016,8 @@ body::-webkit-scrollbar {
 
 .guide-mascot {
   position: absolute;
-  top: 16px;
-  right: 26px;
+  right: 58px;
+  bottom: 66px;
   width: 82px;
   height: 82px;
   object-fit: contain;
@@ -2025,8 +2025,11 @@ body::-webkit-scrollbar {
 }
 
 .guide-modal h2 {
-  max-width: calc(100% - 88px);
-  padding-right: 8px;
+  max-width: none;
+  padding-right: 0;
+  font-size: clamp(18px, 2.2vw, 30px);
+  letter-spacing: -.07em;
+  white-space: nowrap;
 }
 
 .app-header .main-nav {
@@ -2099,14 +2102,16 @@ body::-webkit-scrollbar {
 
 @media (max-width: 760px) {
   .guide-mascot {
-    top: 18px;
-    right: 14px;
+    right: 78px;
+    bottom: 62px;
     width: 64px;
     height: 64px;
   }
 
   .guide-modal h2 {
-    max-width: calc(100% - 76px);
+    max-width: none;
+    font-size: clamp(15px, 4.2vw, 24px);
+    white-space: nowrap;
   }
 }
 
@@ -2206,6 +2211,238 @@ body::-webkit-scrollbar {
 @keyframes content-rise {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+// Final guide placement overrides: the mascot sits in the open space above
+// the action buttons, leaving the progress row and title unobstructed.
+@media (max-width: 760px) {
+  .guide-mascot {
+    top: auto;
+    right: 32px;
+    bottom: 66px;
+    width: 64px;
+    height: 64px;
+  }
+
+  .guide-modal h2 {
+    max-width: none;
+    font-size: clamp(15px, 4.2vw, 24px);
+    white-space: nowrap;
+  }
+}
+
+// Editorial story layer for non-map surfaces. The map canvas intentionally
+// stays outside this block so its geometry, colors, labels, and controls are
+// not changed by the reference treatment.
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  backdrop-filter: blur(14px);
+}
+
+.dashboard-home .dashboard-intro,
+.page-main .page-hero,
+.analysis-main .analysis-heading {
+  position: relative;
+  border-bottom: 1px solid $line-strong;
+}
+
+.dashboard-home .dashboard-intro {
+  padding-bottom: 25px;
+}
+
+.dashboard-home .dashboard-intro h1,
+.page-main .page-hero h1,
+.analysis-main .analysis-heading h1 {
+  max-width: 780px;
+  font-weight: 650;
+  letter-spacing: -.075em;
+}
+
+.dashboard-home .dashboard-intro h1::after,
+.page-main .page-hero h1::after,
+.analysis-main .analysis-heading h1::after {
+  content: '';
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin: 0 0 7px 8px;
+  border-radius: 50%;
+  background: $coral;
+  box-shadow: 0 0 0 5px rgba($coral, .1);
+}
+
+.dashboard-home .intro-aside {
+  border-left: 2px solid $teal;
+  background: linear-gradient(90deg, rgba($teal, .08), transparent 72%);
+}
+
+.dashboard-home .intro-aside strong {
+  letter-spacing: -.08em;
+}
+
+.dashboard-home .map-filter-bar {
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.dashboard-home .filter-heading {
+  position: relative;
+  padding-left: 4px;
+}
+
+.dashboard-home .filter-heading::before {
+  content: '01';
+  align-self: flex-start;
+  margin-top: 4px;
+  color: $coral;
+  font: 600 11px $mono;
+  letter-spacing: .08em;
+}
+
+.dashboard-home .filter-symbol {
+  border-radius: 50%;
+}
+
+.dashboard-home .detail-link,
+.analysis-main .primary-action,
+.action-stats button,
+.guide-next {
+  border-radius: 999px;
+}
+
+.dashboard-home .dashboard-selection {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 1px solid $line-strong;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.dashboard-home .selection-header strong,
+.analysis-main .decision-lead h2,
+.compare-note h2,
+.catalog-method h2 {
+  letter-spacing: -.07em;
+}
+
+.analysis-main .analysis-heading,
+.page-main .page-hero {
+  padding-bottom: 25px;
+}
+
+.analysis-main .decision-hero {
+  border-radius: 0;
+  box-shadow: none;
+  background: linear-gradient(104deg, #fffaf0 0%, $panel 76%);
+}
+
+.analysis-main .metric-card,
+.analysis-main .insight-panel,
+.analysis-main .category-panel,
+.analysis-main .trend-panel,
+.analysis-main .action-panel,
+.comparison-summary > div,
+.comparison-table-panel,
+.compare-note,
+.source-card-large,
+.catalog-method,
+.api-health {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.analysis-main .metric-card,
+.analysis-main .insight-panel,
+.analysis-main .category-panel,
+.analysis-main .trend-panel {
+  border-top-width: 2px;
+}
+
+.analysis-main .action-panel {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  background: #fffaf0;
+}
+
+.comparison-summary > div {
+  position: relative;
+  border-top: 2px solid $line-strong;
+}
+
+.comparison-summary > div::before {
+  content: '01';
+  color: $coral;
+  font: 600 10px $mono;
+}
+
+.comparison-summary > div:nth-child(2)::before { content: '02'; }
+.comparison-summary > div:nth-child(3)::before { content: '03'; }
+
+.comparison-layout .comparison-table-panel {
+  border-top: 2px solid $text;
+}
+
+.compare-note {
+  border-left: 2px solid $coral;
+  background: #fffaf0;
+}
+
+.catalog-grid .source-card-large {
+  border-top: 2px solid $line-strong;
+  transition: transform .2s ease, border-color .2s ease;
+}
+
+.catalog-grid .source-card-large:hover {
+  border-color: $teal;
+  transform: translateY(-3px);
+}
+
+.catalog-method {
+  border-top: 2px solid $text;
+  background: transparent;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .dashboard-home > section:not(.map-dashboard-grid),
+  .analysis-main > section,
+  .page-main > section {
+    animation: content-rise .45s ease both;
+  }
+
+  .dashboard-home > section:nth-child(2),
+  .analysis-main > section:nth-child(2),
+  .page-main > section:nth-child(2) { animation-delay: .06s; }
+
+  .dashboard-home > section:nth-child(3),
+  .analysis-main > section:nth-child(3),
+  .page-main > section:nth-child(3) { animation-delay: .12s; }
+}
+
+@media (max-width: 760px) {
+  .dashboard-home .dashboard-intro h1::after,
+  .page-main .page-hero h1::after,
+  .analysis-main .analysis-heading h1::after {
+    width: 7px;
+    height: 7px;
+    margin-left: 5px;
+  }
+
+  .dashboard-home .dashboard-selection {
+    border-top: 1px solid $line-strong;
+    border-left: 0;
+  }
+
+  .dashboard-home .filter-heading::before {
+    display: none;
+  }
 }
 
 // The report is deliberately printed as the page's conclusion: analysis,
