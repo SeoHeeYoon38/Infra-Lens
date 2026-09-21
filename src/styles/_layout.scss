@@ -1,0 +1,55 @@
+@use 'tokens' as *;
+
+.app-shell { min-height: 100vh; background: radial-gradient(circle at 92% 0%, rgba(48, 101, 118, .15), transparent 28rem), $bg; }
+.app-header { display: flex; align-items: center; justify-content: space-between; height: 72px; padding: 0 42px; border-bottom: 1px solid $line; background: rgba($bg, .84); }
+.brand-lockup { display: flex; align-items: center; gap: 12px; min-width: 235px; }
+.brand-lockup strong { display: block; font: 700 18px/1 $mono; letter-spacing: -.04em; }
+.brand-lockup small { display: block; margin-top: 5px; color: $dim; font: 10px/1 $mono; letter-spacing: .02em; }
+.brand-mark { position: relative; display: flex; align-items: flex-end; gap: 3px; width: 25px; height: 25px; padding: 3px; border: 1px solid rgba($teal, .5); border-radius: 5px; background: rgba($teal, .08); transform: rotate(-8deg); }
+.brand-mark span { display: block; width: 5px; border-radius: 1px; background: $teal; box-shadow: 0 0 8px rgba($teal, .45); }
+.brand-mark span:nth-child(1) { height: 8px; opacity: .45; }
+.brand-mark span:nth-child(2) { height: 13px; opacity: .7; }
+.brand-mark span:nth-child(3) { height: 18px; }
+.main-nav { display: flex; align-self: stretch; gap: 28px; }
+.main-nav a, .main-nav button { display: inline-flex; align-items: center; gap: 8px; position: relative; border: 0; padding: 0; color: $dim; background: transparent; font-size: 13px; text-decoration: none; }
+.main-nav a.active, .main-nav button.active { color: $text; }
+.main-nav a.active::after, .main-nav button.active::after { content: ''; position: absolute; right: 0; bottom: 0; left: 0; height: 2px; background: $teal; box-shadow: 0 0 12px rgba($teal, .8); }
+.header-status { display: flex; align-items: center; gap: 9px; min-width: 235px; justify-content: flex-end; color: $muted; font: 10px $mono; letter-spacing: .05em; }
+.header-divider { width: 1px; height: 15px; margin: 0 2px; background: $line-strong; }
+.dashboard-main { width: min(1450px, calc(100% - 84px)); margin: 0 auto; padding: 58px 0 46px; }
+.dashboard-intro { display: flex; justify-content: space-between; gap: 30px; margin-bottom: 38px; }
+.dashboard-intro h1 { margin: 14px 0 10px; font-size: clamp(33px, 4vw, 53px); line-height: 1.15; letter-spacing: -.06em; font-weight: 580; }
+.dashboard-intro h1 em { color: $coral; font-style: normal; text-shadow: 0 0 26px rgba($coral, .24); }
+.dashboard-intro p { margin: 0; color: $muted; font-size: 15px; letter-spacing: -.02em; }
+.intro-aside { align-self: end; min-width: 230px; padding-left: 20px; border-left: 1px solid $line-strong; }
+.intro-aside span, .intro-aside small { display: block; color: $dim; font: 10px $mono; }
+.intro-aside strong { display: block; margin: 9px 0 5px; font: 500 25px/1 $mono; color: $text; }
+.filter-bar { display: flex; align-items: center; gap: 10px; min-height: 74px; margin-bottom: 16px; padding: 12px 16px; border: 1px solid $line; border-radius: 6px; background: rgba($panel, .9); }
+.filter-heading { display: flex; align-items: center; gap: 10px; flex: 1 1 auto; min-width: 205px; }
+.filter-heading strong, .filter-heading small { display: block; }
+.filter-heading strong { font-size: 13px; }
+.filter-heading small { margin-top: 4px; color: $dim; font-size: 11px; }
+.filter-symbol { display: grid; place-items: center; width: 32px; height: 32px; color: $teal; border: 1px solid rgba($teal, .25); border-radius: 4px; background: rgba($teal, .08); }
+.filter-control { position: relative; display: grid; min-width: 145px; padding: 5px 28px 4px 11px; border: 1px solid $line-strong; border-radius: 4px; background: rgba(4, 12, 18, .54); }
+.filter-control span { color: $dim; font: 10px $mono; }
+.filter-control select { appearance: none; width: 100%; padding: 4px 0 0; border: 0; outline: 0; color: $text; background: transparent; font-size: 13px; }
+.filter-control svg { position: absolute; right: 9px; bottom: 11px; color: $muted; pointer-events: none; }
+.filter-chip { display: grid; min-width: 112px; padding: 6px 11px 5px; border: 1px solid $line; border-radius: 4px; }
+.filter-chip span, .filter-chip i { color: $dim; font: 9px $mono; font-style: normal; }
+.filter-chip strong { margin: 3px 0; font-size: 12px; font-weight: 500; }
+.refresh-button { display: grid; place-items: center; width: 34px; height: 34px; margin-left: auto; border: 1px solid $line-strong; border-radius: 4px; color: $muted; background: transparent; }
+.refresh-button:hover { color: $teal; border-color: rgba($teal, .5); }
+.metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 10px; }
+.metric-card { min-height: 132px; padding: 17px 18px 13px; border: 1px solid $line; border-top: 2px solid var(--metric-accent); border-radius: 5px; background: linear-gradient(140deg, rgba(18, 33, 45, .95), rgba(8, 17, 25, .98)); }
+.metric-head, .metric-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.metric-label { color: $muted; font-size: 12px; }
+.metric-icon { color: var(--metric-accent); }
+.metric-value { display: block; margin: 17px 0 15px; color: $text; font: 500 25px/1 $mono; letter-spacing: -.05em; }
+.metric-foot { color: $dim; font: 10px $mono; }
+.mini-sparkline { width: 82px; height: 25px; opacity: .9; }
+.primary-grid { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(335px, .75fr); gap: 10px; margin-bottom: 10px; }
+.secondary-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr); gap: 10px; margin-bottom: 10px; }
+.section-title-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
+.section-title-row h2, .map-panel h2, .action-copy h2 { margin: 8px 0 0; color: $text; font-size: 17px; font-weight: 500; letter-spacing: -.045em; }
+.section-meta { color: $dim; font: 10px $mono; text-align: right; }
+.app-footer { display: flex; justify-content: space-between; width: min(1450px, calc(100% - 84px)); margin: 0 auto; padding: 20px 0 26px; border-top: 1px solid $line; color: $dim; font: 10px $mono; }

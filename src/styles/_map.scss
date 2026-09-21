@@ -1,0 +1,44 @@
+@use 'tokens' as *;
+
+.map-panel { min-height: 490px; overflow: hidden; }
+.map-panel-head { display: flex; align-items: flex-start; justify-content: space-between; padding: 22px 22px 16px; }
+.prototype-badge { display: inline-flex; align-items: center; gap: 7px; color: $muted; font: 10px $mono; }
+.map-toolbar { display: flex; align-items: center; justify-content: space-between; padding: 11px 22px; border-top: 1px solid $line; border-bottom: 1px solid $line; background: rgba(4, 11, 17, .36); }
+.map-toolbar-title { display: flex; align-items: center; gap: 7px; color: $muted; font-size: 11px; }
+.layer-list { display: flex; align-items: center; gap: 16px; }
+.layer-toggle { display: inline-flex; align-items: center; gap: 6px; color: $muted; font: 10px $mono; cursor: pointer; }
+.layer-toggle input { position: absolute; opacity: 0; pointer-events: none; }
+.toggle-dot { display: block; width: 7px; height: 7px; border-radius: 50%; box-shadow: 0 0 9px currentColor; }
+.map-canvas { position: relative; min-height: 354px; margin: 0 9px 9px; overflow: hidden; border: 1px solid rgba($teal, .11); background: radial-gradient(ellipse at 50% 42%, rgba(43, 117, 117, .15), transparent 54%), linear-gradient(150deg, rgba(18, 50, 59, .4), rgba(5, 17, 25, .8)); }
+.map-canvas::before, .map-canvas::after { content: ''; position: absolute; border: 1px solid rgba($teal, .12); border-radius: 50%; pointer-events: none; }
+.map-canvas::before { width: 72%; height: 145%; top: -22%; left: 13%; transform: rotate(-24deg); }
+.map-canvas::after { width: 56%; height: 115%; top: -4%; left: 30%; transform: rotate(29deg); border-color: rgba($coral, .08); }
+.map-grid-lines { position: absolute; inset: 0; opacity: .24; background-image: linear-gradient(rgba(120, 160, 169, .12) 1px, transparent 1px), linear-gradient(90deg, rgba(120, 160, 169, .12) 1px, transparent 1px); background-size: 46px 46px; mask-image: radial-gradient(ellipse, #000 38%, transparent 78%); }
+.map-watermark { position: absolute; top: 24px; left: 25px; color: rgba($teal, .12); font: 600 36px/1 $mono; letter-spacing: -.08em; }
+.map-watermark span { font-size: 8px; letter-spacing: .2em; }
+.map-axis-label { position: absolute; z-index: 1; color: rgba($muted, .64); font: 9px $mono; letter-spacing: .04em; }
+.map-axis-top { top: 15px; right: 20px; }
+.map-axis-bottom { bottom: 14px; left: 20px; }
+.district-grid { position: absolute; z-index: 2; top: 45px; right: 13%; bottom: 30px; left: 13%; display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; transform: rotate(-4deg); }
+.district-cell { position: relative; display: flex; align-items: flex-end; justify-content: space-between; min-width: 0; padding: 9px 8px; overflow: hidden; border: 1px solid rgba(100, 167, 172, .18); border-radius: 2px; color: rgba($text, .72); background: linear-gradient(145deg, rgba(17, 106, 102, .17), rgba(113, 49, 58, calc(var(--risk) / 430))); opacity: 0; animation: reveal .45s var(--delay) forwards; }
+.district-cell::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(101, 219, 185, .18), rgba(255, 114, 98, calc(var(--risk) / 220))); opacity: .65; }
+.district-cell span, .district-cell small { position: relative; z-index: 1; }
+.district-cell span { overflow: hidden; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+.district-cell small { color: rgba($text, .72); font: 9px $mono; }
+.district-cell:hover, .district-cell.selected { border-color: $teal; color: $text; box-shadow: 0 0 0 1px rgba($teal, .28), 0 0 18px rgba($teal, .18); transform: translateY(-2px); }
+.district-cell.selected::after { content: ''; position: absolute; top: 6px; right: 6px; width: 4px; height: 4px; border-radius: 50%; background: $coral; box-shadow: 0 0 8px $coral; }
+@keyframes reveal { to { opacity: 1; } }
+.map-marker { position: absolute; z-index: 4; display: flex; align-items: center; gap: 5px; transform: translate(-50%, -50%); color: $text; font: 9px $mono; white-space: nowrap; }
+.marker-pulse { display: block; width: 7px; height: 7px; border: 1px solid currentColor; border-radius: 50%; background: currentColor; box-shadow: 0 0 0 4px rgba(103, 214, 192, .12), 0 0 12px currentColor; }
+.marker-대학 { color: $teal; }
+.marker-공공 { color: $amber; }
+.marker-회수 { color: $violet; }
+.map-callout { position: absolute; z-index: 5; display: grid; gap: 2px; min-width: 92px; padding: 8px 10px; border: 1px solid rgba($coral, .55); border-radius: 4px; background: rgba(15, 25, 31, .9); box-shadow: 0 0 24px rgba($coral, .14); transform: translate(-50%, -50%); }
+.map-callout::before { content: ''; position: absolute; bottom: -16px; left: 50%; width: 1px; height: 16px; background: $coral; }
+.map-callout span, .map-callout small { color: $muted; font: 9px $mono; }
+.map-callout strong { color: $coral; font: 600 18px/1 $mono; }
+.map-legend { position: absolute; z-index: 6; right: 18px; bottom: 14px; display: flex; align-items: center; gap: 5px; color: $dim; font: 8px $mono; }
+.map-legend i { display: block; width: 13px; height: 6px; border-radius: 1px; }
+.legend-low { background: #1b6f73; }.legend-mid { background: #927259; }.legend-high { background: $coral; }
+.map-footer { display: flex; justify-content: space-between; gap: 16px; padding: 0 22px 17px; color: $dim; font: 9px $mono; }
+.map-footer span:first-child { color: $muted; }.legend-dot { display: inline-block; width: 6px; height: 6px; margin-right: 5px; border-radius: 50%; }.legend-dot.critical { background: $coral; box-shadow: 0 0 8px rgba($coral, .8); }

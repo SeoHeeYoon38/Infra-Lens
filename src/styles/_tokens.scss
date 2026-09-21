@@ -1,0 +1,36 @@
+$bg: #071019;
+$panel: #0c1722;
+$panel-raised: #111f2b;
+$line: rgba(150, 183, 202, .16);
+$line-strong: rgba(150, 183, 202, .28);
+$text: #e7f0f3;
+$muted: #8ea4af;
+$dim: #607783;
+$teal: #67d6c0;
+$coral: #ff7262;
+$amber: #f8b55d;
+$violet: #9d8bff;
+$sans: 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif;
+$mono: 'IBM Plex Mono', 'Cascadia Code', Consolas, monospace;
+
+:root {
+  color-scheme: dark;
+  font-family: $sans;
+  color: $text;
+  background: $bg;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --bg: #{$bg};
+  --panel: #{$panel};
+  --panel-raised: #{$panel-raised};
+  --line: #{$line};
+  --line-strong: #{$line-strong};
+  --text: #{$text};
+  --muted: #{$muted};
+  --dim: #{$dim};
+  --teal: #{$teal};
+  --coral: #{$coral};
+  --amber: #{$amber};
+  --violet: #{$violet};
+}
