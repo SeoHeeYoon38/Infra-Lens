@@ -1,20 +1,20 @@
-$bg: #071019;
-$panel: #0c1722;
-$panel-raised: #111f2b;
-$line: rgba(150, 183, 202, .16);
-$line-strong: rgba(150, 183, 202, .28);
-$text: #e7f0f3;
-$muted: #8ea4af;
-$dim: #607783;
-$teal: #67d6c0;
-$coral: #ff7262;
-$amber: #f8b55d;
-$violet: #9d8bff;
+$bg: #f4f7f9;
+$panel: #ffffff;
+$panel-raised: #f9fbfc;
+$line: #dce5eb;
+$line-strong: #bdccd5;
+$text: #16222d;
+$muted: #536271;
+$dim: #748390;
+$teal: #147d75;
+$coral: #d94a43;
+$amber: #a96a00;
+$violet: #6354c2;
 $sans: 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif;
 $mono: 'IBM Plex Mono', 'Cascadia Code', Consolas, monospace;
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
   font-family: $sans;
   color: $text;
   background: $bg;
