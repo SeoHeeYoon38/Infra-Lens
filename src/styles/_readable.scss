@@ -2260,19 +2260,6 @@ body::-webkit-scrollbar {
   letter-spacing: -.075em;
 }
 
-.dashboard-home .dashboard-intro h1::after,
-.page-main .page-hero h1::after,
-.analysis-main .analysis-heading h1::after {
-  content: '';
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-  margin: 0 0 7px 8px;
-  border-radius: 50%;
-  background: $coral;
-  box-shadow: 0 0 0 5px rgba($coral, .1);
-}
-
 .dashboard-home .intro-aside {
   border-left: 2px solid $teal;
   background: linear-gradient(90deg, rgba($teal, .08), transparent 72%);
@@ -2427,14 +2414,6 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 760px) {
-  .dashboard-home .dashboard-intro h1::after,
-  .page-main .page-hero h1::after,
-  .analysis-main .analysis-heading h1::after {
-    width: 7px;
-    height: 7px;
-    margin-left: 5px;
-  }
-
   .dashboard-home .dashboard-selection {
     border-top: 1px solid $line-strong;
     border-left: 0;
@@ -2447,6 +2426,31 @@ body::-webkit-scrollbar {
 
 // The report is deliberately printed as the page's conclusion: analysis,
 // evidence and the policy recommendation stay together in the PDF.
+.guide-next-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.guide-next-wrap .guide-mascot {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: calc(100% - 1px);
+  left: 50%;
+  width: 82px;
+  height: 82px;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 760px) {
+  .guide-next-wrap .guide-mascot {
+    width: 64px;
+    height: 64px;
+  }
+}
+
 @media print {
   @page {
     size: A4;
