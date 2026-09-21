@@ -28,3 +28,4 @@ infra-lens-site.tar.gz
 *.njsproj
 *.sln
 *.sw?
+.vercel
