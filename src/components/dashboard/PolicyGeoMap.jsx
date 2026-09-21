@@ -134,16 +134,19 @@ function centerFor(feature, project, level, selectedSido) {
 
 function placeLabels(meta, level, width, height) {
   const nudges = level === 'sido' ? {
-    인천광역시: [-26, 8],
+    인천광역시: [22, 8],
     서울특별시: [28, 14],
     경기도: [22, 68],
-    충청남도: [-22, 12],
+    충청남도: [20, 12],
     세종특별자치시: [22, -13],
     대전광역시: [18, 18],
     충청북도: [24, -12],
-    광주광역시: [-16, -8],
+    광주광역시: [4, -8],
     전라남도: [16, 8],
-    부산광역시: [17, 12],
+    부산광역시: [-8, 10],
+    울산광역시: [-14, 0],
+    경상북도: [-58, 0],
+    전북특별자치도: [4, 0],
   } : {}
 
   return meta.map((item) => {
@@ -232,17 +235,20 @@ export default function PolicyGeoMap({ data, mapLevel, selectedSido, selectedDis
           </g>
         })}
       </g>
+      <g className="policy-svg-labels" aria-hidden="true">
+        {view.labels.map((item) => {
+          const name = mapLevel === 'sido' ? compactSido(normalizeSido(item.featureName)) : compactDistrict(item.featureName)
+          const showLabel = mapLevel === 'sido' || item.selected || hovered === item.featureName
+          if (!showLabel) return null
+          const labelClass = mapLevel === 'district' ? 'district-label' : 'sido-label'
+          const valueY = item.labelY + (mapLevel === 'district' ? 25 : 28)
+          return <g key={`label-${item.feature.properties.code}`} className={`policy-svg-label ${labelClass} ${item.selected ? 'selected' : ''}`}>
+            <text className="policy-region-label" x={item.labelX} y={item.labelY} textAnchor="middle" dominantBaseline="middle">{name}</text>
+            <text className="policy-region-value" x={item.labelX} y={valueY} textAnchor="middle" dominantBaseline="middle">{item.risk}</text>
+          </g>
+        })}
+      </g>
     </svg>
-    <div className="policy-html-labels" aria-hidden="true">
-      {view.labels.map((item) => {
-        const name = mapLevel === 'sido' ? compactSido(normalizeSido(item.featureName)) : compactDistrict(item.featureName)
-        const showLabel = mapLevel === 'sido' || item.selected || hovered === item.featureName
-        if (!showLabel) return null
-        const gyeonggiClass = mapLevel === 'sido' && canonicalName(item.featureName) === '경기도' ? 'gyeonggi-label' : ''
-        const showRisk = mapLevel === 'sido' || item.selected || hovered === item.featureName
-        return <span key={`label-${item.feature.properties.code}`} className={`policy-html-label ${mapLevel === 'district' ? 'district-label' : 'sido-label'} ${item.selected ? 'selected' : ''} ${gyeonggiClass}`} style={{ left: `${(item.labelX / view.width) * 100}%`, top: `${(item.labelY / view.height) * 100}%` }}><span>{name}</span>{showRisk && <b>{item.risk}</b>}</span>
-      })}
-    </div>
     <div className="policy-map-hint"><span /> 지역을 클릭하면 필요한 범위만 크게 펼쳐집니다.</div>
   </div>
 }
