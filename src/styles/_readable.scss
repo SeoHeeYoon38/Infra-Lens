@@ -1969,6 +1969,11 @@ body::-webkit-scrollbar {
   background: transparent;
 }
 
+.trend-labels {
+  justify-content: space-between;
+  padding: 0 7%;
+}
+
 .category-empty {
   margin: 27px 0 0;
   color: $muted;
