@@ -12,9 +12,9 @@ const sidoCodes = {
 }
 
 const colors = {
-  stable: { fill: '#8dbfb5', edge: '#286f68', depth: '#2d6b66' },
-  watch: { fill: '#dfbd65', edge: '#9b711f', depth: '#8a6524' },
-  critical: { fill: '#dc8178', edge: '#a44239', depth: '#8f3e3a' },
+  stable: { fill: '#9abbb5', edge: '#2d716b', depth: '#2f6b67' },
+  watch: { fill: '#d9c277', edge: '#9b762a', depth: '#92733a' },
+  critical: { fill: '#c98279', edge: '#914d45', depth: '#86534d' },
 }
 
 function normalizeSido(name) {
