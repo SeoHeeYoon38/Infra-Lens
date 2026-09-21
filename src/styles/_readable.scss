@@ -1572,3 +1572,72 @@ body::-webkit-scrollbar {
   .dashboard-home .policy-html-label.selected { font-size: 15px; }
   .dashboard-home .policy-html-label b { font-size: 10px; }
 }
+
+// First-visit guide: lightweight, dismissible and intentionally not persisted.
+.guide-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(18, 39, 44, .42);
+  backdrop-filter: blur(4px);
+}
+
+.guide-modal {
+  position: relative;
+  width: min(560px, 100%);
+  padding: 34px 38px 30px;
+  border: 1px solid #c9d9d8;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(24, 53, 58, .24);
+}
+
+.guide-close {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 50%;
+  color: #5a7174;
+  background: #f1f6f5;
+  cursor: pointer;
+}
+
+.guide-progress { display: flex; justify-content: space-between; padding-right: 42px; color: #39736f; font: 11px $mono; letter-spacing: .08em; }
+.guide-progress b { color: #8c9b9e; font-weight: 500; }
+.guide-modal h2 { margin: 28px 0 12px; color: #172a2e; font-size: clamp(24px, 3vw, 34px); line-height: 1.25; letter-spacing: -.055em; }
+.guide-modal p { min-height: 74px; margin: 0; color: #536b70; font-size: 15px; line-height: 1.8; word-break: keep-all; }
+.guide-dots { display: flex; gap: 7px; margin-top: 28px; }
+.guide-dots i { width: 7px; height: 7px; border-radius: 50%; background: #c8d7d6; }
+.guide-dots i.active { width: 24px; border-radius: 8px; background: $teal; }
+.guide-actions { display: flex; justify-content: space-between; gap: 10px; margin-top: 26px; }
+.guide-actions button { display: inline-flex; align-items: center; gap: 7px; min-height: 42px; padding: 0 16px; border-radius: 7px; font-size: 13px; cursor: pointer; }
+.guide-prev { border: 1px solid #d6e0e0; color: #7d8f91; background: #fff; }
+.guide-prev svg { transform: rotate(180deg); }
+.guide-prev:disabled { opacity: .38; cursor: default; }
+.guide-next { border: 1px solid $teal; color: #fff; background: $teal; }
+
+@media (min-width: 1281px) {
+  .dashboard-home.dashboard-main { width: min(1780px, calc(100% - 72px)); }
+  .dashboard-home .map-dashboard-grid { grid-template-columns: minmax(0, 1.7fr) minmax(330px, .7fr); }
+  .dashboard-home .policy-map-stage { min-height: clamp(620px, 66vh, 860px); }
+  .dashboard-home .dashboard-intro { align-items: flex-end; }
+  .dashboard-home .intro-aside { flex: 0 0 260px; min-width: 0; }
+  .dashboard-home .map-filter-bar { display: grid; grid-template-columns: minmax(240px, 1fr) minmax(190px, .7fr) minmax(190px, .7fr) auto; }
+  .dashboard-home .filter-heading,
+  .dashboard-home .map-filter-bar .select-field { min-width: 0; }
+  .dashboard-home .detail-link { margin-left: 0; }
+}
+
+@media (max-width: 760px) {
+  .guide-modal { padding: 28px 24px 24px; }
+  .guide-modal h2 { margin-top: 24px; font-size: 24px; }
+  .guide-modal p { min-height: 0; font-size: 14px; }
+}

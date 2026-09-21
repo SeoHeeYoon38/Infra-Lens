@@ -10,6 +10,7 @@ const iconPaths = {
   refresh: 'M20 11a8 8 0 0 0-14.7-4L3 10m0 0V5m0 5h5m11 3a8 8 0 0 1-14.7 4L3 14m0 0v5m0-5h5',
   external: 'M14 4h6v6m-1-5-9 9M17 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5',
   recycle: 'm7 7 2-3 3 1m5 5 3 2-2 3m-5 5-1 3-3-1M9 4l3 5H7m9 1-3 5 5-1m-9 0 3-5-5 1',
+  close: 'm6 6 12 12M18 6 6 18',
 }
 
 export default function Icon({ name, size = 18, strokeWidth = 1.7 }) {
