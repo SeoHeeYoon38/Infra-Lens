@@ -4,7 +4,7 @@ export default function useInfraData() {
   const [data, setData] = useState(null)
 
   useEffect(() => {
-    fetch('/data/infra-lens-summary.json')
+    fetch('/api/summary')
       .then((response) => response.json())
       .then(setData)
       .catch(() => setData({ regions: [], sidos: [] }))

@@ -11,6 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
+.env
+.env.*
+!.env.example
+public/data/kosis-single-households-2025-extracted/
 infra-lens-site.zip
 infra-lens-site.tar.gz
 

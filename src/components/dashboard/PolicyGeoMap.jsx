@@ -148,7 +148,10 @@ function placeLabels(meta, level, width, height) {
 
   return meta.map((item) => {
     const name = normalizeSido(item.featureName)
-    const [dx, dy] = nudges[name] ?? [0, 0]
+    const districtNudge = level === 'district' && selectedSido === '제주특별자치도'
+      ? { 제주시: [0, -24], 서귀포시: [0, -20] }[item.featureName]
+      : null
+    const [dx, dy] = districtNudge ?? nudges[name] ?? [0, 0]
     return {
       ...item,
       labelX: Math.min(width - 36, Math.max(36, item.center[0] + dx)),
