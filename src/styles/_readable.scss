@@ -1981,21 +1981,52 @@ body::-webkit-scrollbar {
 }
 
 .action-icon {
-  width: 70px;
-  height: 70px;
+  width: 138px;
+  height: 138px;
   overflow: hidden;
   border-color: rgba($amber, .48);
-  border-radius: 16px;
+  border-radius: 24px;
   background: rgba($amber, .08);
 }
 
 .action-icon img {
   display: block;
-  width: 86px;
-  height: 86px;
+  width: 168px;
+  height: 168px;
   max-width: none;
   object-fit: contain;
-  transform: translateY(4px);
+  transform: translateY(8px);
+}
+
+.guide-link {
+  margin-left: 22px;
+  padding: 8px 12px;
+  border: 1px solid $line-strong;
+  border-radius: 6px;
+  color: $muted;
+  background: $panel;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.guide-link:hover {
+  color: $teal;
+  border-color: rgba($teal, .5);
+}
+
+.guide-mascot {
+  position: absolute;
+  top: 16px;
+  right: 26px;
+  width: 82px;
+  height: 82px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.guide-modal h2 {
+  max-width: calc(100% - 88px);
+  padding-right: 8px;
 }
 
 .app-header .main-nav {
@@ -2006,6 +2037,76 @@ body::-webkit-scrollbar {
 @media (min-width: 761px) {
   .nationwide-map-panel {
     overflow: visible;
+  }
+}
+
+// Keep native-looking select menus above the dashboard panels and prevent the
+// viewport-fit workspace from clipping the filter controls.
+.dashboard-home .map-filter-bar {
+  position: relative;
+  z-index: 30;
+  overflow: visible;
+}
+
+.dashboard-home .map-filter-bar .select-field {
+  z-index: 31;
+}
+
+.dashboard-home .map-filter-bar .select-field.open {
+  z-index: 40;
+}
+
+.dashboard-home .map-filter-bar .select-menu {
+  z-index: 100;
+  max-height: min(300px, 42vh);
+}
+
+.dashboard-home .map-dashboard-grid {
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+@media (min-width: 761px) {
+  .app-shell:has(.dashboard-home) {
+    height: auto;
+    min-height: 100dvh;
+    overflow: visible;
+  }
+
+  .dashboard-main.dashboard-home {
+    height: auto;
+    min-height: calc(100dvh - 72px);
+    overflow: visible;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1080px) {
+  .dashboard-home.dashboard-main {
+    min-height: calc(100dvh - 66px);
+  }
+
+  .dashboard-home .map-dashboard-grid {
+    overflow: visible;
+  }
+
+  .dashboard-home .nationwide-map-panel,
+  .dashboard-home .dashboard-selection {
+    height: auto;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 760px) {
+  .guide-mascot {
+    top: 18px;
+    right: 14px;
+    width: 64px;
+    height: 64px;
+  }
+
+  .guide-modal h2 {
+    max-width: calc(100% - 76px);
   }
 }
 
@@ -2033,6 +2134,35 @@ body::-webkit-scrollbar {
   .map-visual-row .legend-caption {
     width: 100%;
     margin: 0;
+  }
+
+  .guide-link {
+    margin-left: auto;
+  }
+
+  .guide-mascot {
+    top: 28px;
+    right: 16px;
+    width: 86px;
+    height: 86px;
+  }
+
+  .guide-modal h2 {
+    max-width: calc(100% - 84px);
+  }
+
+  .action-icon {
+    width: 112px;
+    height: 112px;
+  }
+
+  .action-icon img {
+    width: 138px;
+    height: 138px;
+  }
+
+  .action-copy {
+    min-width: calc(100% - 126px);
   }
 }
 
