@@ -132,7 +132,7 @@ function centerFor(feature, project, level, selectedSido) {
   return [x / coordinates.length, y / coordinates.length]
 }
 
-function placeLabels(meta, level, width, height) {
+function placeLabels(meta, level, width, height, selectedSido) {
   const nudges = level === 'sido' ? {
     인천광역시: [22, 8],
     서울특별시: [28, 14],
@@ -197,6 +197,7 @@ export default function PolicyGeoMap({ data, mapLevel, selectedSido, selectedDis
     const features = mapLevel === 'sido'
       ? boundaries.provinces.features
       : boundaries.municipalities.features.filter((feature) => String(feature.properties.code).startsWith(selectedCode))
+    if (!features.length) return { width: 1200, height: 720, meta: [], labels: [], bounds: null, pinned: new Set() }
     const project = makeProjector(features, 1200, 720, mapLevel, selectedSido)
     const width = project.width
     const height = project.height
@@ -214,7 +215,7 @@ export default function PolicyGeoMap({ data, mapLevel, selectedSido, selectedDis
     })
     const pinned = new Set(meta.filter((item) => item.risk >= 70).sort((a, b) => b.risk - a.risk).slice(0, 5).map((item) => canonicalName(item.featureName)))
     pinned.add(canonicalName(selectedDistrict))
-    return { width, height, meta, labels: placeLabels(meta, mapLevel, width, height), bounds: project.bounds, pinned }
+    return { width, height, meta, labels: placeLabels(meta, mapLevel, width, height, selectedSido), bounds: project.bounds, pinned }
   }, [boundaries, districtByName, mapLevel, selectedDistrict, selectedSido, sidoByName])
 
   if (!view) return <div className="policy-map-stage"><div className="policy-map-loading"><span className="loading-orb" /><strong>Infra-Lens 지도를 준비하는 중</strong></div></div>
