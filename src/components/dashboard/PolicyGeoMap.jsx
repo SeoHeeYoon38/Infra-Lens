@@ -136,7 +136,7 @@ function placeLabels(meta, level, width, height) {
   const nudges = level === 'sido' ? {
     인천광역시: [-26, 8],
     서울특별시: [28, 14],
-    경기도: [16, -12],
+    경기도: [22, 34],
     충청남도: [-22, 12],
     세종특별자치시: [22, -13],
     대전광역시: [18, 18],
@@ -233,9 +233,10 @@ export default function PolicyGeoMap({ data, mapLevel, selectedSido, selectedDis
     <div className="policy-html-labels" aria-hidden="true">
       {view.labels.map((item) => {
         const name = mapLevel === 'sido' ? compactSido(normalizeSido(item.featureName)) : compactDistrict(item.featureName)
-        const showLabel = mapLevel === 'sido' || view.pinned.has(canonicalName(item.featureName)) || hovered === item.featureName || mapLevel === 'district'
+        const showLabel = mapLevel === 'sido' || item.selected || hovered === item.featureName
         if (!showLabel) return null
-        return <span key={`label-${item.feature.properties.code}`} className={`policy-html-label ${mapLevel === 'district' ? 'district-label' : 'sido-label'} ${item.selected ? 'selected' : ''}`} style={{ left: `${(item.labelX / view.width) * 100}%`, top: `${(item.labelY / view.height) * 100}%` }}><span>{name}</span>{(mapLevel === 'sido' || item.selected) && <b>{item.risk}</b>}</span>
+        const gyeonggiClass = mapLevel === 'sido' && canonicalName(item.featureName) === '경기도' ? 'gyeonggi-label' : ''
+        return <span key={`label-${item.feature.properties.code}`} className={`policy-html-label ${mapLevel === 'district' ? 'district-label' : 'sido-label'} ${item.selected ? 'selected' : ''} ${gyeonggiClass}`} style={{ left: `${(item.labelX / view.width) * 100}%`, top: `${(item.labelY / view.height) * 100}%` }}><span>{name}</span>{(mapLevel === 'sido' || item.selected) && <b>{item.risk}</b>}</span>
       })}
     </div>
     <div className="policy-map-hint"><span /> 지역을 클릭하면 필요한 범위만 크게 펼쳐집니다.</div>
