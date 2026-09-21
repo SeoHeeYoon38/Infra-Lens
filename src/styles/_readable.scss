@@ -1514,6 +1514,7 @@
 // panels and controls collapse before text becomes cramped or clipped.
 html, body, #root {
   min-width: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -2374,6 +2375,11 @@ body::-webkit-scrollbar {
   box-shadow: 0 0 12px rgba(226, 168, 43, .48);
 }
 
+.app-header .brand-lockup {
+  color: inherit;
+  text-decoration: none;
+}
+
 .dashboard-home .dashboard-intro h1 em,
 .page-main .page-hero h1 em,
 .analysis-main .analysis-heading h1 em {
@@ -2416,6 +2422,108 @@ body::-webkit-scrollbar {
 .guide-link:hover {
   color: #c17d0f;
   border-color: rgba(226, 168, 43, .68);
+}
+
+// Keep every page-level select menu above the sections that follow it.
+.analysis-main .analysis-heading,
+.page-main .page-hero {
+  position: relative;
+  z-index: 70;
+  overflow: visible;
+  animation: none !important;
+  transform: none !important;
+}
+
+.analysis-main .analysis-selects,
+.page-main .hero-select-field {
+  position: relative;
+  z-index: 71;
+}
+
+.analysis-main .analysis-selects .select-field,
+.page-main .hero-select-field .select-field {
+  z-index: 72;
+}
+
+.analysis-main .analysis-selects .select-field.open,
+.page-main .hero-select-field .select-field.open {
+  z-index: 80;
+}
+
+.analysis-main .analysis-selects .select-menu,
+.page-main .hero-select-field .select-menu {
+  z-index: 120;
+}
+
+.analysis-main > section:not(.analysis-heading),
+.page-main > section:not(.page-hero) {
+  position: relative;
+  z-index: 1;
+}
+
+// Fine-detail accents follow the mascot palette without changing map fills.
+.eyebrow {
+  color: #d7901b;
+}
+
+.guide-progress {
+  color: #d7901b;
+}
+
+.guide-dots i.active {
+  background: #d7901b;
+  box-shadow: 0 0 0 3px rgba(215, 144, 27, .12);
+}
+
+.live-dot {
+  background: #e2a82b;
+  box-shadow: 0 0 0 4px rgba(226, 168, 43, .14), 0 0 12px rgba(226, 168, 43, .55);
+}
+
+.prototype-badge {
+  color: #b77814;
+}
+
+.select-field.open .select-trigger {
+  border-color: #d18a17;
+  box-shadow: 0 0 0 3px rgba(209, 138, 23, .14);
+}
+
+.select-menu button:hover,
+.select-menu button.selected {
+  color: #b77814;
+  background: #fff1c8;
+}
+
+.select-check {
+  color: #d7901b;
+}
+
+.map-back-button {
+  color: #b77814;
+  border-color: #d9b35b;
+}
+
+.map-back-button:hover {
+  border-color: #d18a17;
+  background: #fff4d6;
+}
+
+.trend-line {
+  stroke: #d7901b;
+  filter: drop-shadow(0 0 3px rgba(215, 144, 27, .38));
+}
+
+.trend-point {
+  stroke: #d7901b;
+}
+
+.trend-up {
+  color: #c17d0f;
+}
+
+.decision-flow > div:last-child strong {
+  color: #d7901b;
 }
 
 .dashboard-home .dashboard-intro h1::after,
@@ -2511,6 +2619,79 @@ body::-webkit-scrollbar {
   background: #fffaf0;
 }
 
+.compare-select-field {
+  min-width: 0;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid $line-strong;
+}
+
+.compare-select-field .select-trigger {
+  min-height: 50px;
+  border-color: $text;
+  border-radius: 0;
+}
+
+.compare-select-field .select-label {
+  color: #b77814;
+  font-size: 13px;
+  letter-spacing: .04em;
+}
+
+.compare-select-field .select-trigger strong {
+  color: #d7901b;
+  font-size: 16px;
+}
+
+.compare-select-field .select-menu button {
+  font-size: 15px;
+}
+
+.comparison-table-panel {
+  padding: 28px 30px;
+}
+
+.comparison-table-panel .table-heading h2 {
+  font-size: 22px;
+}
+
+.comparison-table-panel .table-heading > span {
+  font-size: 12px;
+}
+
+.comparison-table .table-row {
+  min-height: 62px;
+  font-size: 14px;
+}
+
+.comparison-table .table-row.table-head {
+  min-height: 44px;
+  font-size: 11px;
+}
+
+.comparison-table .rank {
+  font-size: 13px;
+}
+
+.comparison-table .table-row strong {
+  font-size: 15px;
+}
+
+.comparison-table .table-row em,
+.comparison-table .table-amount {
+  font-size: 13px;
+}
+
+.comparison-table .table-bar {
+  width: 100px;
+  height: 7px;
+}
+
+.comparison-table .risk-pill {
+  padding: 7px 10px;
+  font-size: 12px;
+}
+
 .catalog-grid .source-card-large {
   border-top: 2px solid $line-strong;
   transition: transform .2s ease, border-color .2s ease;
@@ -2524,6 +2705,40 @@ body::-webkit-scrollbar {
 .catalog-method {
   border-top: 2px solid $text;
   background: transparent;
+}
+
+// Keep compact labels legible on the narrow analysis cards.
+.analysis-main .category-row {
+  grid-template-columns: 110px minmax(0, 1fr) 62px;
+}
+
+.analysis-main .category-name {
+  min-width: 0;
+  color: $muted;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.comparison-summary > div::before {
+  color: #d7901b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.comparison-summary > div > span {
+  color: $muted;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.comparison-summary > div > small {
+  color: $dim;
+  font-size: 11px;
+}
+
+.compare-note .compare-select-field .select-trigger strong,
+.compare-note .compare-select-field .select-menu button.selected {
+  color: #d7901b;
 }
 
 @media (prefers-reduced-motion: no-preference) {
