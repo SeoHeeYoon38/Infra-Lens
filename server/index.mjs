@@ -74,7 +74,8 @@ const server = http.createServer((request, response) => {
       sources: [
         { name: 'ABP_CONTEST_DATA', provider: 'BC카드 소비데이터', status: 'connected', scope: '20대·시군구·2026.01—06' },
         { name: '서울특별시 생활폐기물 발생량 및 처리현황', provider: '서울특별시 / 공공데이터포털', status: 'catalogued', url: 'https://www.data.go.kr/data/15047172/fileData.do', scope: '자치구별·연간·XLSX' },
-        { name: '1인가구·대학교·무인회수기', provider: '공공데이터포털', status: 'pending', scope: 'API 연동 예정' },
+        { name: '주민등록 1인가구 통계', provider: '행정안전부 / 공공데이터포털', status: 'pending', scope: '서비스키 필요·행정동·월별' },
+        { name: '대학교·무인 회수기 좌표', provider: '지자체·공공데이터포털', status: 'pending', scope: '원본 API 선택 필요·WGS84' },
       ],
     })
     return
