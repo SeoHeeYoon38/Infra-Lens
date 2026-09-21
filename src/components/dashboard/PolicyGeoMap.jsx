@@ -136,7 +136,7 @@ function placeLabels(meta, level, width, height) {
   const nudges = level === 'sido' ? {
     인천광역시: [-26, 8],
     서울특별시: [28, 14],
-    경기도: [22, 34],
+    경기도: [22, 68],
     충청남도: [-22, 12],
     세종특별자치시: [22, -13],
     대전광역시: [18, 18],
