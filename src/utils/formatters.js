@@ -12,5 +12,5 @@ export function formatCount(value) {
 }
 
 export function formatMonth(month) {
-  return month ? `${month.slice(0, 4)}.${month.slice(4)}` : ''
+  return month ? `${month.slice(0, 4)}.${Number(month.slice(4))}` : ''
 }
