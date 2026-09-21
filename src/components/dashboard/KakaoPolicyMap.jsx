@@ -58,6 +58,19 @@ function shortSido(name) {
   return name.replace('특별자치도', '').replace('특별자치시', '').replace('특별시', '').replace('광역시', '')
 }
 
+function compactSido(name) {
+  const compact = {
+    경상남도: '경남',
+    경상북도: '경북',
+    전라남도: '전남',
+    전북특별자치도: '전북',
+    충청남도: '충남',
+    충청북도: '충북',
+    강원특별자치도: '강원',
+  }
+  return compact[name] ?? shortSido(name)
+}
+
 function canonicalName(name = '') {
   return name.replaceAll(' ', '')
 }
@@ -89,8 +102,8 @@ function getCenter(rings) {
   return [(minLat + maxLat) / 2, (minLng + maxLng) / 2]
 }
 
-function labelMarkup(name, risk, selected, showRisk) {
-  return `<div class="kakao-region-label ${selected ? 'selected' : ''}"><span>${name}</span>${showRisk ? `<b>${risk}</b>` : ''}</div>`
+function labelMarkup(name, risk, selected, showRisk, level) {
+  return `<div class="kakao-region-label ${selected ? 'selected' : ''} ${level === 'sido' ? 'national' : 'district'}"><span>${name}</span>${showRisk ? `<b>${risk}</b>` : ''}</div>`
 }
 
 export default function KakaoPolicyMap({ data, mapLevel, selectedSido, selectedDistrict, onSelectSido, onSelectDistrict }) {
@@ -214,12 +227,12 @@ export default function KakaoPolicyMap({ data, mapLevel, selectedSido, selectedD
 
       const [lat, lng] = getCenter(rings)
       const center = new maps.LatLng(lat, lng)
-      const displayName = mapLevel === 'sido' ? shortSido(normalizeSido(featureName)) : featureName.replaceAll(' ', '')
+      const displayName = mapLevel === 'sido' ? compactSido(normalizeSido(featureName)) : featureName.replaceAll(' ', '')
       const persistent = mapLevel === 'sido' || pinnedDistricts.has(canonicalName(featureName))
       const overlay = new maps.CustomOverlay({
         position: center,
-        content: labelMarkup(displayName, risk, selected, selected),
-        yAnchor: selected ? 1.25 : .5,
+        content: labelMarkup(displayName, risk, selected, mapLevel === 'sido' || selected, mapLevel),
+        yAnchor: selected ? 1.05 : .5,
         zIndex: selected ? 12 : 8,
       })
       if (persistent) overlay.setMap(map)

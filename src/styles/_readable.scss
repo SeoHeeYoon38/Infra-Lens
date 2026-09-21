@@ -906,20 +906,23 @@
 // labels stay deliberately sparse to keep the base map readable.
 .kakao-map-stage {
   position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
   margin: 0 16px;
   border: 1px solid $line;
   border-radius: 10px;
   background: #eaf0f2;
   box-shadow: 0 16px 28px rgba(38, 67, 80, .12);
-  perspective: 1200px;
+  perspective: 1400px;
 }
 
 .kakao-policy-map {
   width: 100%;
-  height: 590px;
+  height: 100%;
+  min-height: 0;
   overflow: hidden;
   border-radius: 9px;
-  transform: rotateX(1.2deg);
+  transform: translateY(-1px) rotateX(.35deg);
   transform-origin: center bottom;
 }
 
@@ -941,31 +944,31 @@
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  padding: 4px 7px;
-  border: 1px solid rgba(255, 255, 255, .9);
-  border-radius: 6px;
-  color: $text;
-  background: rgba(255, 255, 255, .88);
-  box-shadow: 0 3px 8px rgba(30, 52, 62, .13);
-  font-size: 10px;
+  padding: 2px 0;
+  border: 0;
+  border-radius: 0;
+  color: #102b35;
+  background: transparent;
+  box-shadow: none;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1;
   white-space: nowrap;
   pointer-events: none;
-  backdrop-filter: blur(5px);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .95), 1px 0 0 rgba(255, 255, 255, .8), -1px 0 0 rgba(255, 255, 255, .8), 0 -1px 0 rgba(255, 255, 255, .8);
   transition: transform .18s ease, box-shadow .18s ease;
 }
 
 .kakao-region-label b {
-  color: $coral;
-  font: 700 10px $mono;
+  color: #a83e35;
+  font: 700 11px $mono;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .95);
 }
 
 .kakao-region-label.selected {
-  border-color: $teal;
-  background: #fff;
-  box-shadow: 0 9px 0 #255e59, 0 15px 22px rgba(22, 53, 60, .28);
-  transform: translateY(-9px) scale(1.08);
+  color: #083f3b;
+  transform: translateY(-4px) scale(1.12);
+  text-shadow: 0 3px 0 #6ba99e, 0 1px 0 rgba(255, 255, 255, .95), 1px 0 0 rgba(255, 255, 255, .9), -1px 0 0 rgba(255, 255, 255, .9), 0 -1px 0 rgba(255, 255, 255, .9);
 }
 
 .map-depth-note {
@@ -976,12 +979,12 @@
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  padding: 7px 9px;
-  border: 1px solid rgba(255, 255, 255, .8);
-  border-radius: 6px;
+  padding: 4px 2px;
+  border: 0;
+  border-radius: 0;
   color: $muted;
-  background: rgba(255, 255, 255, .88);
-  box-shadow: 0 4px 10px rgba(32, 54, 64, .12);
+  background: rgba(255, 255, 255, .42);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .94);
   font-size: 10px;
   pointer-events: none;
   backdrop-filter: blur(5px);
@@ -1028,7 +1031,7 @@
   }
 
   .kakao-policy-map {
-    height: 500px;
+    min-height: 500px;
     transform: none;
   }
 
@@ -1041,5 +1044,120 @@
     right: 8px;
     bottom: 8px;
     max-width: 180px;
+  }
+}
+
+// The dashboard is a map workspace: keep the first view inside the viewport
+// and let the map use the available height instead of forcing page scrolling.
+@media (min-width: 761px) {
+  .app-shell:has(.dashboard-home) {
+    height: 100dvh;
+    overflow: hidden;
+  }
+
+  .app-shell:has(.dashboard-home) .app-footer {
+    display: none;
+  }
+
+  .dashboard-main.dashboard-home {
+    display: flex;
+    flex-direction: column;
+    width: min(1540px, calc(100% - 52px));
+    height: calc(100dvh - 72px);
+    min-height: 0;
+    padding: 14px 0 14px;
+    overflow: hidden;
+  }
+
+  .dashboard-home .dashboard-intro {
+    align-items: end;
+    margin-bottom: 10px;
+  }
+
+  .dashboard-home .dashboard-intro h1 {
+    margin: 9px 0 7px;
+    font-size: clamp(27px, 2.7vw, 37px);
+    line-height: 1.05;
+  }
+
+  .dashboard-home .dashboard-intro p {
+    font-size: 11px;
+  }
+
+  .dashboard-home .intro-aside {
+    min-width: 205px;
+  }
+
+  .dashboard-home .map-filter-bar {
+    min-height: 60px;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+  }
+
+  .dashboard-home .map-dashboard-grid {
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+
+  .dashboard-home .nationwide-map-panel {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .dashboard-home .nationwide-map-panel .map-panel-head {
+    flex: 0 0 auto;
+    padding: 12px 18px 9px;
+  }
+
+  .dashboard-home .nationwide-map-panel h2 {
+    margin-top: 4px;
+    font-size: 17px;
+  }
+
+  .dashboard-home .nationwide-map-panel .map-subtitle {
+    margin-top: 5px;
+    font-size: 11px;
+  }
+
+  .dashboard-home .nationwide-map-panel .map-toolbar {
+    flex: 0 0 auto;
+    padding: 7px 18px;
+  }
+
+  .dashboard-home .kakao-map-stage {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+
+  .dashboard-home .map-legend-readable {
+    flex: 0 0 auto;
+    padding-top: 7px;
+    padding-bottom: 0;
+  }
+
+  .dashboard-home .map-selection-row {
+    display: none;
+  }
+
+  .dashboard-home .dashboard-selection {
+    height: 100%;
+    padding: 15px;
+    overflow: hidden;
+  }
+
+  .dashboard-home .selection-score {
+    margin: 13px 0 11px;
+    padding: 11px 0;
+  }
+
+  .dashboard-home .selection-score strong {
+    font-size: 33px;
+  }
+
+  .dashboard-home .selection-note {
+    margin: 12px 0;
   }
 }
