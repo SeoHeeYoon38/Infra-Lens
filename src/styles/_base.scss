@@ -1,0 +1,16 @@
+@use 'tokens' as *;
+
+* { box-sizing: border-box; }
+
+body { margin: 0; min-width: 320px; min-height: 100vh; background: $bg; }
+button, select { font: inherit; }
+button { cursor: pointer; }
+a { color: inherit; }
+
+.eyebrow { display: block; color: $teal; font: 600 10px/1 $mono; letter-spacing: .14em; text-transform: uppercase; }
+.live-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: $teal; box-shadow: 0 0 0 4px rgba($teal, .1), 0 0 12px rgba($teal, .65); }
+.panel { border: 1px solid $line; border-radius: 6px; background: linear-gradient(145deg, rgba(17, 31, 43, .92), rgba(9, 20, 29, .98)); box-shadow: 0 18px 38px rgba(0, 0, 0, .18); }
+
+.loading-shell { display: grid; place-items: center; align-content: center; gap: 18px; min-height: 100vh; color: $muted; font-size: 14px; }
+.loading-orb { width: 42px; height: 42px; border: 1px solid rgba($teal, .2); border-top-color: $teal; border-radius: 50%; animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
