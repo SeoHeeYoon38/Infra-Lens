@@ -236,7 +236,8 @@ export default function PolicyGeoMap({ data, mapLevel, selectedSido, selectedDis
         const showLabel = mapLevel === 'sido' || item.selected || hovered === item.featureName
         if (!showLabel) return null
         const gyeonggiClass = mapLevel === 'sido' && canonicalName(item.featureName) === '경기도' ? 'gyeonggi-label' : ''
-        return <span key={`label-${item.feature.properties.code}`} className={`policy-html-label ${mapLevel === 'district' ? 'district-label' : 'sido-label'} ${item.selected ? 'selected' : ''} ${gyeonggiClass}`} style={{ left: `${(item.labelX / view.width) * 100}%`, top: `${(item.labelY / view.height) * 100}%` }}><span>{name}</span>{(mapLevel === 'sido' || item.selected) && <b>{item.risk}</b>}</span>
+        const showRisk = mapLevel === 'sido' || item.selected || hovered === item.featureName
+        return <span key={`label-${item.feature.properties.code}`} className={`policy-html-label ${mapLevel === 'district' ? 'district-label' : 'sido-label'} ${item.selected ? 'selected' : ''} ${gyeonggiClass}`} style={{ left: `${(item.labelX / view.width) * 100}%`, top: `${(item.labelY / view.height) * 100}%` }}><span>{name}</span>{showRisk && <b>{item.risk}</b>}</span>
       })}
     </div>
     <div className="policy-map-hint"><span /> 지역을 클릭하면 필요한 범위만 크게 펼쳐집니다.</div>
