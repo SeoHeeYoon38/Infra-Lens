@@ -2251,6 +2251,7 @@ body::-webkit-scrollbar {
 .dashboard-home .dashboard-intro {
   padding-bottom: 25px;
   padding-top: 18px;
+  border-bottom: 0;
 }
 
 .dashboard-home .dashboard-intro::before {
@@ -2296,16 +2297,11 @@ body::-webkit-scrollbar {
 
 .dashboard-home .filter-heading {
   position: relative;
-  padding-left: 4px;
+  padding-left: 0;
 }
 
 .dashboard-home .filter-heading::before {
-  content: '02';
-  align-self: flex-start;
-  margin-top: 4px;
-  color: $coral;
-  font: 600 11px $mono;
-  letter-spacing: .08em;
+  display: none;
 }
 
 .dashboard-home .filter-symbol {
@@ -2374,53 +2370,52 @@ body::-webkit-scrollbar {
 
 // Warm mascot-led accent palette for non-map UI.
 .app-header .main-nav a.active::after {
-  background: #d49a2c;
-  box-shadow: 0 0 12px rgba(212, 154, 44, .42);
+  background: #e2a82b;
+  box-shadow: 0 0 12px rgba(226, 168, 43, .48);
 }
 
 .dashboard-home .dashboard-intro h1 em,
 .page-main .page-hero h1 em,
 .analysis-main .analysis-heading h1 em {
-  color: #bd8420;
+  color: #d7901b;
   text-shadow: none;
 }
 
 .dashboard-home .intro-aside {
-  border-left-color: #d49a2c;
-  background: linear-gradient(90deg, rgba(212, 154, 44, .1), transparent 72%);
+  border-left-color: #e2a82b;
+  background: linear-gradient(90deg, rgba(226, 168, 43, .12), transparent 72%);
 }
 
 .dashboard-home .dashboard-intro::before,
-.dashboard-home .filter-heading::before,
 .dashboard-home .dashboard-selection::before {
-  color: #bd8420;
+  color: #d7901b;
 }
 
 .dashboard-home .filter-symbol {
-  color: #bd8420;
-  border-color: rgba(212, 154, 44, .35);
-  background: #fff7df;
+  color: #d7901b;
+  border-color: rgba(226, 168, 43, .46);
+  background: #fff1c8;
 }
 
 .dashboard-home .detail-link,
 .dashboard-home .primary-action,
 .analysis-main .primary-action,
 .guide-next {
-  border-color: #b97b18;
-  background: #b97b18;
-  box-shadow: 0 5px 14px rgba(185, 123, 24, .18);
+  border-color: #d18a17;
+  background: #d18a17;
+  box-shadow: 0 5px 14px rgba(209, 138, 23, .22);
 }
 
 .dashboard-home .detail-link:hover,
 .dashboard-home .primary-action:hover,
 .analysis-main .primary-action:hover,
 .guide-next:hover {
-  background: #9f6712;
+  background: #b96f0d;
 }
 
 .guide-link:hover {
-  color: #a96a00;
-  border-color: rgba(212, 154, 44, .58);
+  color: #c17d0f;
+  border-color: rgba(226, 168, 43, .68);
 }
 
 .dashboard-home .dashboard-intro h1::after,
