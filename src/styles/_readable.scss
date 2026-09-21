@@ -1490,3 +1490,85 @@
   .policy-html-label.district-label { font-size: 13px; }
   .policy-html-label.selected { font-size: 17px; }
 }
+
+// Responsive workspace guardrails. The map remains the hero surface, while
+// panels and controls collapse before text becomes cramped or clipped.
+html, body, #root {
+  min-width: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+@media (max-width: 1280px) {
+  .app-header { padding-right: 26px; padding-left: 26px; }
+  .main-nav { gap: 18px; }
+  .dashboard-main, .app-footer { width: min(100% - 48px, 1240px); }
+  .dashboard-home.dashboard-main { width: calc(100% - 40px); }
+  .map-dashboard-grid { grid-template-columns: minmax(0, 1.35fr) minmax(280px, .75fr); }
+  .dashboard-selection { padding: 19px; }
+  .policy-map-stage { min-height: clamp(420px, 48vw, 640px); }
+}
+
+@media (max-width: 1080px) and (min-width: 761px) {
+  .app-header { height: 66px; padding-right: 20px; padding-left: 20px; }
+  .brand-lockup { min-width: 190px; }
+  .main-nav { gap: 12px; }
+  .main-nav a, .main-nav button { font-size: 11px; }
+  .header-status { min-width: 180px; }
+  .dashboard-home.dashboard-main { height: calc(100dvh - 66px); }
+  .dashboard-home .map-filter-bar { flex-wrap: wrap; }
+  .dashboard-home .filter-heading { min-width: 175px; }
+  .dashboard-home .map-dashboard-grid { grid-template-columns: 1fr; overflow: auto; }
+  .dashboard-home .nationwide-map-panel { height: auto; min-height: 0; overflow: visible; }
+  .dashboard-home .dashboard-selection { height: auto; overflow: visible; }
+  .dashboard-home .policy-map-stage { min-height: min(58vw, 600px); }
+}
+
+@media (max-width: 760px) {
+  .app-shell:has(.dashboard-home) { height: auto; min-height: 100dvh; overflow: visible; }
+  .dashboard-home.dashboard-main { display: block; width: calc(100% - 32px); height: auto; min-height: 0; padding: 24px 0 28px; overflow: visible; }
+  .dashboard-home .dashboard-intro { align-items: flex-start; margin-bottom: 20px; }
+  .dashboard-home .dashboard-intro h1 { font-size: clamp(28px, 8vw, 37px); line-height: 1.15; }
+  .dashboard-home .intro-aside { min-width: 0; }
+  .dashboard-home .map-filter-bar { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .dashboard-home .filter-heading { grid-column: 1 / -1; }
+  .dashboard-home .map-filter-bar .select-field { min-width: 0; }
+  .dashboard-home .detail-link { grid-column: 1 / -1; width: 100%; margin-left: 0; }
+  .dashboard-home .map-dashboard-grid { display: grid; grid-template-columns: 1fr; overflow: visible; }
+  .dashboard-home .nationwide-map-panel { height: auto; overflow: visible; }
+  .dashboard-home .policy-map-stage { min-height: clamp(380px, 105vw, 520px); }
+  .dashboard-home .policy-map-title { top: 12px; left: 13px; font-size: 11px; }
+  .dashboard-home .policy-map-hint { right: 10px; bottom: 10px; max-width: 190px; font-size: 9px; }
+  .dashboard-home .dashboard-selection { height: auto; overflow: visible; }
+  .dashboard-home .map-legend-readable { flex-wrap: wrap; gap: 6px; padding: 10px 14px; }
+  .dashboard-home .map-legend-readable .legend-caption { width: 100%; margin-left: 0; }
+  .report-columns { grid-template-columns: 1fr; gap: 12px; }
+  .source-items { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .app-header { padding: 12px 14px; }
+  .brand-lockup strong { font-size: 16px; }
+  .brand-lockup small { font-size: 8px; }
+  .main-nav { gap: 10px; overflow-x: auto; padding-bottom: 2px; }
+  .main-nav a, .main-nav button { flex: 0 0 auto; font-size: 10px; }
+  .dashboard-home.dashboard-main { width: calc(100% - 24px); }
+  .dashboard-home .map-filter-bar { grid-template-columns: 1fr; }
+  .dashboard-home .filter-heading, .dashboard-home .detail-link { grid-column: auto; }
+  .dashboard-home .policy-map-stage { min-height: 360px; margin-right: 6px; margin-left: 6px; }
+  .dashboard-home .policy-html-label { max-width: 80px; font-size: 12px; }
+  .dashboard-home .policy-html-label.selected { font-size: 15px; }
+  .dashboard-home .policy-html-label b { font-size: 10px; }
+}

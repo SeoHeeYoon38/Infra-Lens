@@ -4,6 +4,7 @@ import Icon from '../components/ui/Icon'
 const sourceDetails = {
   ABP_CONTEST_DATA: { badge: 'BC', badgeClass: 'source-card', detail: '편의점·외식·유통 업종별 금액과 결제건수를 집계해 소비 발자국을 만듭니다.' },
   '서울특별시 생활폐기물 발생량 및 처리현황': { badge: '공공', badgeClass: 'source-public', detail: '발생량과 재활용·소각·매립 현황을 소비 신호와 교차 검증할 수 있습니다.', url: 'https://www.data.go.kr/data/15047172/fileData.do' },
+  '전국 폐기물 발생 및 처리현황': { badge: '전국', badgeClass: 'source-public', detail: '한국환경공단 2024년 전국 원문을 시도별 요약으로 적재했습니다. BC카드 시군구 소비와는 시도 검증 레이어로 연결됩니다.', url: 'https://www.data.go.kr/data/3070174/fileData.do' },
   '전국 시군구 성 및 연령별 1인가구': { badge: 'CSV', badgeClass: 'source-public', detail: 'KOSIS 전국 시군구 원문 CSV를 적재해 전체 1인가구와 20~29세 1인가구를 함께 제공합니다.', url: 'https://kosis.kr/statisticsList/mass/mass_list.jsp?list_id=&org_id=101&process=statHtml&tbl_id=DT_1PL1502&vw_cd=' },
   '서울특별시 강서구 행정동별 1인가구 현황': { badge: 'XLSX', badgeClass: 'source-public', detail: '공공데이터포털 원문 XLSX를 서버에 적재해 행정동별 실제 1인가구 수를 제공합니다.', url: 'https://www.data.go.kr/data/15107625/fileData.do' },
   '전국대학및전문대학정보표준데이터': { badge: 'API', badgeClass: 'source-public', detail: '공공데이터포털 REST API에서 대학 목록을 조회해 생활권 주변 교육 인프라를 표시합니다.' },
